@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Adminpix</title>
+        <link rel="shortcut icon" href="assets/dist/img/favicon.png" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {families: ['Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i']},
+                active: function () {
+                    sessionStorage.fonts = true;
+                }
+            });
+        </script>
+        <!-- START GLOBAL MANDATORY STYLE -->
+        <link href="assets/dist/css/base.css" rel="stylesheet" type="text/css">
+        <!-- START PAGE LABEL PLUGINS --> 
+        <link href="assets/weather-icons/css/weather-icons.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/weather-icons/css/weather-icons-wind.min.css" rel="stylesheet" type="text/css"/>
+        <!-- START THEME LAYOUT STYLE -->
+        <link href="assets/dist/css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div class="preloader"></div>
+        <!-- Site wrapper -->
+        <div class="wrapper">
+             <!-- Header Area -->
+            <header class="main_header">
+              <div class="logo">
+                <a href="index.html">
+                  <img class="img-fluid" src="assets/dist/img/logo.png" alt="">
+                </a>
+              </div>
+              <ul class="custom-navbar">
+                <li>
+                  <form class="d-none d-md-block" action="#">
+                    <input type="text" placeholder="Search">
+                    <button type="submit" data-toggle="tooltip" title="Search"><i class="fas fa-search"></i></button>
+                  </form>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-icon" data-toggle="dropdown"><i class="fas fa-bell"></i>
+                    <span class="badge fadeAnim">2</span>
+                  </a>
+                  <div class="dropdown-menu dropdown_box notification_box">
+                    <div class="dropdown_box-header">
+                      <h4 class="inline-block float-left"><span>2</span> new notifications</h4>
+                      <a href="#" class="float-right">Clear All</a>
+                    </div>
+                    <div class="dropdown_box-body">
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="fas fa-comment-dots"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>3 new comments</h5>
+                                <span>40 seconds ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="far fa-envelope"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>You have received 1 email</h5>
+                                <span>5 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="fas fa-dollar-sign"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>You have transferred $50</h5>
+                                <span>8 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="fas fa-thumbs-up"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>Someone likes your post</h5>
+                                <span>13 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="fas fa-ban"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>Someone banned your post</h5>
+                                <span>20 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="far fa-trash-alt"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>Someone deleted your post</h5>
+                                <span>36 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown_box-footer">
+                      <a href="#" class="footer-btn">see all notification <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-icon" data-toggle="dropdown"><i class="far fa-envelope"></i>
+                    <span class="badge fadeAnim">3</span>
+                  </a>
+                    <div class="dropdown-menu dropdown_box message-box">
+                      <div class="dropdown_box-header">
+                        <h4 class="d-block text-center"><span>3</span> new messages</h4>
+                      </div>
+                      <div class="dropdown_box-body">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Farzana Yasmin <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+
+                               </div>
+                               <span class="active-status text-danger float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar2.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Tanzil Ahmed <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-muted float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar3.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Mozammel Hoque <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-primary float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar4.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Mubin Khan <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-success float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Farzana Yasmin <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+
+                               </div>
+                               <span class="active-status text-danger float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar2.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Tanzil Ahmed <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-muted float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar3.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Mozammel Hoque <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-primary float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar4.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Mubin Khan <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-success float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown_box-footer">
+                        <a href="#" class="footer-btn">see all messages <i class="fas fa-long-arrow-alt-right"></i></a>
+                      </div>
+                  </div>
+                </li>
+                <li><a href="#" data-toggle="dropdown"><i class="fas fa-bars"></i></a>
+                    <div class="dropdown-menu dropdown_box admin-box">
+                        <ul>
+                          <li><a href="#">Superadmin</a></li>
+                          <li><a href="#">Admin</a></li>
+                          <li><a href="#">HR</a></li>
+                          <li><a href="#">Manager</a></li>
+                          <li><a href="#">Editor</a></li>
+                          <li><a href="#">Subscriber</a></li>
+                          <li><a href="#">User</a></li>
+                        </ul>
+                  </div>
+                </li>
+                <li><a href="#" data-toggle="dropdown"><i class="far fa-user"></i></a>
+                    <div class="dropdown-menu dropdown_box settings-box">
+                        <ul>
+                          <li><a href="#"><span class="pr-2"><i class="far fa-user"></i></span> User Profile</a></li>
+                          <li><a href="#"><span class="pr-2"><i class="fas fa-cog"></i></span> Settings</a></li>
+                          <li><a href="#"><span class="pr-2"><i class="ti-key"></i></span> Logout</a></li>
+                        </ul>
+                  </div>
+                </li>
+                <li><a class="d-block d-md-none pt-0 mr-2 sidebar-toggler" data-toggle="dropdown" href="#"><i class="ti-menu-alt"></i></a></li>
+
+              </ul>
+            </header><!-- /Header Area-->
+            <!-- Sidebar Area -->
+            <aside class="sidebar-wrapper">
+              <nav class="d-none d-md-block sidebar-navbar ">
+                <ul class="metismenu mb-3" id="menu1">
+                <li>
+                    <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                      <span class="left-icon"><i class="ti-home"></i></span>
+                        <span class="menu-text">Dasboard</span>
+                    </a>
+                    <ul class="submenu-angle dashboard-menu" aria-expanded="false">
+                      <li><a href="index.html">Dashbord One</a></li>
+                      <li><a href="index2.html">Dashbord Two</a></li>
+                      <li><a href="index3.html">Dashbord Three</a></li>
+                    </ul>
+                </li>
+                <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-pencil-alt"></i></span>
+                          <span class="menu-text">Forms</span>
+                      </a>
+                        <ul class="dashboard-menu">
+                          <li><a href="forms_basic.html">Basic Forms</a></li>
+                          <li><a href="forms_validation.html">Validation Forms</a></li>
+                          <li><a href="form_input_group.html">Input Group</a></li>
+                          <li><a href="form_mask.html">Form Mask</a></li>
+                          <li><a href="form_select.html">Select</a></li>
+                          <li><a href="form_touchspin.html">Touchspin</a></li>
+                          <li><a href="forms_cropper.html">Cropper</a></li>
+                          <li><a href="forms_editor_ck.html">CK Editor</a></li>
+                          <li><a href="forms_editor_summernote.html">Summernote</a></li>
+                          <li><a href="forms_editor_markdown.html">Markdown</a></li>
+                          <li><a href="forms_editor_trumbowyg.html">Trumbowyg</a></li>
+                          <li><a href="forms_wysihtml5.html">Wysihtml5</a></li>
+                          <li>
+                            <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                              <span class="menu-text">Form Wizard</span>
+                            </a>
+                            <ul class="dashboard-menu">
+                              <li><a href="form_wizard.html" class="submenu-item" >Wizard One</a></li>
+                              <li><a href="form_wizard2.html" class="submenu-item" >Wizard Two</a></li>
+                              <li><a href="form_wizard3.html" class="submenu-item" >Wizard Three</a></li>
+                              <li><a href="form_wizard4.html" class="submenu-item" >Wizard Four</a></li>
+                            </ul>
+                          </li>
+
+                        </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="fas fa-table"></i></span>
+                        <span class="menu-text">Table</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="table.html">Simple Table</a></li>
+                        <li><a href="data-table.html">Data Table</a></li>
+                        <li><a href="table_basic.html">Multiple Table</a></li>
+                        <li><a href="table_column_rendering.html">Rendering Table</a></li>
+                        <li><a href="table_record_selection.html">Record Table</a></li>
+                        <li><a href="table_scrollable.html">Scrollable Table</a></li>
+                        <li><a href="footable.html">Foo Table</a></li>
+                        <li><a href="x-editable.html">X-Editable</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="fa fa-sort-alpha-desc"></i></span>
+                        <span class="menu-text">UI Elements</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="button.html">Buttons</a></li>
+                        <li><a href="notification.html">Notification</a></li>
+                        <li><a href="panels.html">Panels</a></li>
+                        <li><a href="tabs.html">Tab</a></li>
+                        <li><a href="modals.html">Modals</a></li>
+                        <li><a href="progressbars.html">Progressber</a></li>
+                        <li><a href="list.html">List View</a></li>
+                        <li><a href="icheck_toggle_pagination.html">iCheck, Toggle</a></li>
+                        <li><a href="label-badge-alert.html">labels, Badges</a></li>
+                        <li><a href="treeview.html">Tree View</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="fa fa-bar-chart"></i></span>
+                        <span class="menu-text">Charts</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="chart-float.html">Float Chart</a></li>
+                        <li><a href="chart_morris.html">Morris Chart</a></li>
+                        <li><a href="charts_js.html">Chart JS</a></li>
+                        <li><a href="charts_am.html">Am Chart</a></li>
+                        <li><a href="chart_google.html">Google Chart</a></li>
+                        <li><a href="charts_sparklin.html">Chart Sparklin</a></li>
+                      </ul>
+                  </li>
+                  <li class="active">
+                      <a class="has-arrow menu-item active" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="fa fa-font-awesome"></i></span>
+                        <span class="menu-text">Icons</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="icons-bootstrap.html"><i class="fa fa-bold"></i>Bootstrap Icons</a></li>
+                        <li><a href="icons-fontawesome.html"><i class="fa fa-font-awesome"></i>Fontawesome</a></li>
+                        <li><a href="icons-flag.html"><i class="fa fa-flag-checkered"></i>Flag Icons</a></li>
+                        <li><a href="icons-material.html"><i class="fa fa-meetup"></i>Material Icons</a></li>
+                        <li><a class="active" href="icons-weather.html"><i class="fa fa-bolt"></i>Weather Icons </a></li>
+                        <li><a href="icons-line.html"><i class="fa fa-lemon-o"></i>Line Icons</a></li>
+                        <li><a href="icons-pe.html"><i class="fa fa-diamond"></i>Pe Icons</a></li>
+                        <li><a href="icons-socicon.html"><i class="fa fa-share-alt"></i>Socicon Icons</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-location-pin"></i></span>
+                        <span class="menu-text">Maps</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="maps_amcharts.html">Amcharts Maps</a></li>
+                        <li><a href="maps_data.html">Data Maps</a></li>
+                        <li><a href="maps_jvector.html">Jvector Maps</a></li>
+                        <li><a href="maps_google.html">Google map</a></li>
+                        <li><a href="maps_snazzy.html">Snazzy Map</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-email"></i></span>
+                        <span class="menu-text">Mailbox</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="mailbox.html">Mailbox</a></li>
+                        <li><a href="maildetails.html">Mailbox Details</a></li>
+                        <li><a href="compose.html">Compose</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-mobile"></i></span>
+                        <span class="menu-text">App View</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="invoice.html">Invoice</a></li>
+                        <li><a href="timeline.html">Vertical timeline</a></li>
+                        <li><a href="horizontal_timeline.html">Horizontal timeline</a></li>
+                        <li><a href="pricing.html">Pricing Table</a></li>
+                        <li><a href="slider.html">Slider</a></li>
+                        <li><a href="carousel.html">Carousel</a></li>
+                        <li><a href="code_editor.html">Code editor</a></li>
+                        <li><a href="gridSystem.html">Grid System</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-agenda"></i></span>
+                        <span class="menu-text">Other pages</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="forget_password.html">Forget password</a></li>
+                        <li><a href="lockscreen.html">Lockscreen</a></li>
+                        <li><a href="404.html">404 Error</a></li>
+                        <li><a href="505.html">505 Error</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                    <a href="calender.html" class="menu-item">
+                        <span class="left-icon"><i class="fa fa-calendar"></i></span>
+                        <span class="menu-text">Calender</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="blank.html" class="menu-item">
+                        <span class="left-icon"><i class="fa fa-file-o"></i></span>
+                        <span class="menu-text">Blank Page</span>
+                    </a>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-direction-alt"></i></span>
+                        <span class="menu-text">Multilevel</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="#">Level One</a></li>
+                        <li>
+                          <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                            <span class="menu-text">Level One</span>
+                          </a>
+                          <ul class="dashboard-menu">
+                            <li><a href="form_wizard.html" class="submenu-item" >Level Tow</a></li>
+                            <li>
+                              <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                                <span class="menu-text">Level Two</span>
+                              </a>
+                              <ul class="dashboard-menu">
+                                <li><a href="form_wizard.html" class="submenu-item" >Level Three</a></li>
+                                <li><a href="form_wizard2.html" class="submenu-item" >Level Three</a></li>
+                                <li><a href="form_wizard3.html" class="submenu-item" >Level Three</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="form_wizard3.html" class="submenu-item" >Level Tow</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Level One</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </nav>
+            </aside><!-- /sidebar Area-->
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper px-4">
+                <!-- Main content -->
+                <div class="content">
+      					<!-- Content Header (Page header) -->
+      					<div class="content-header">
+      					  <div class="header-icon">
+      						  <i class="pe-7s-cloud"></i>
+      					  </div>
+      					  <div class="header-title">
+      						  <h1>Weather Icons</h1>
+      						  <small>22 Weather Themed Icons and CSS</small>
+      						  <ul class="breadcrumb">
+      							  <li><a class="pr-2" href="index.html"><i class="pe-7s-home"></i> Home</a>/</li>
+      							  <li><a class="px-2" href="#">Icons</a>/</li>
+      							  <li class="active px-2">Fixed</li>
+      						  </ul>
+      					  </div>
+      				  </div>
+                <!-- /. Content Header (Page header) -->
+      				  <div class="clearfix"></div>
+      				  <!-- page conntent-->
+
+                <div class="card lobicard" data-sortable="true">
+                    <div class="card-header">
+                        <div class="card-title">
+                            Getting Started
+                        </div>
+                    </div>
+                    <div class="card-block p-3">
+                      <p class="mb-2 fs-13">To use the Weather Icons, place the main CSS files in your CSS directory, and the font files in a "font" directory on the same folder level as the CSS director. Once you've done that, all you need to do to reference an icon in your HTML is type  <code>&lt;i class="wi wi-night-sleet"&gt;&lt;/i&gt;</code></p>
+                      <div class="weather-icon-inner">
+                          <ul class="icon_list">
+                              <li>
+                                  <i class="wi wi-day-cloudy-high"></i>
+                                  <span class="icon_name">wi-day-cloudy-high</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-light-wind"></i>
+                                  <span class="icon_name">wi-day-light-wind</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-sleet"></i>
+                                  <span class="icon_name">wi-day-sleet</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-haze"></i>
+                                  <span class="icon_name">wi-day-haze</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-cloudy-high"></i>
+                                  <span class="icon_name">wi-night-cloudy-high</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-partly-cloudy"></i>
+                                  <span class="icon_name">wi-night-alt-partly-cloudy</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-sleet"></i>
+                                  <span class="icon_name">wi-sleet</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moonrise"></i>
+                                  <span class="icon_name">wi-moonrise</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moonset"></i>
+                                  <span class="icon_name">wi-moonset</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-sleet"></i>
+                                  <span class="icon_name">wi-night-sleet</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-sleet"></i>
+                                  <span class="icon_name">wi-night-alt-sleet</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-raindrop"></i>
+                                  <span class="icon_name">wi-raindrop</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-barometer"></i>
+                                  <span class="icon_name">wi-barometer</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-humidity"></i>
+                                  <span class="icon_name">wi-humidity</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-na"></i>
+                                  <span class="icon_name">wi-na</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-flood"></i>
+                                  <span class="icon_name">wi-flood</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-sandstorm"></i>
+                                  <span class="icon_name">wi-sandstorm</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-tsunami"></i>
+                                  <span class="icon_name">wi-tsunami</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-earthquake"></i>
+                                  <span class="icon_name">wi-earthquake</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-fire"></i>
+                                  <span class="icon_name">wi-fire</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-volcano"></i>
+                                  <span class="icon_name">wi-volcano</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-train"></i>
+                                  <span class="icon_name">wi-train</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-small-craft-advisory"></i>
+                                  <span class="icon_name">wi-small-craft-advisory</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-gale-warning"></i>
+                                  <span class="icon_name">wi-gale-warning</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-storm-warning"></i>
+                                  <span class="icon_name">wi-storm-warning</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-hurricane-warning"></i>
+                                  <span class="icon_name">wi-hurricane-warning</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-sunny"></i>
+                                  <span class="icon_name">wi-day-sunny</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-cloudy"></i>
+                                  <span class="icon_name">wi-day-cloudy</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-cloudy-gusts"></i>
+                                  <span class="icon_name">wi-day-cloudy-gusts</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-cloudy-windy"></i>
+                                  <span class="icon_name">wi-day-cloudy-windy</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-fog"></i>
+                                  <span class="icon_name">wi-day-fog</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-hail"></i>
+                                  <span class="icon_name">wi-day-hail</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-haze"></i>
+                                  <span class="icon_name">wi-day-haze</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-lightning"></i>
+                                  <span class="icon_name">wi-day-lightning</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-rain"></i>
+                                  <span class="icon_name">wi-day-rain</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-rain-mix"></i>
+                                  <span class="icon_name">wi-day-rain-mix</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-rain-wind"></i>
+                                  <span class="icon_name">wi-day-rain-wind</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-showers"></i>
+                                  <span class="icon_name">wi-day-showers</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-sleet"></i>
+                                  <span class="icon_name">wi-day-sleet</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-sleet-storm"></i>
+                                  <span class="icon_name">wi-day-sleet-storm</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-snow"></i>
+                                  <span class="icon_name">wi-day-snow</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-snow-thunderstorm"></i>
+                                  <span class="icon_name">wi-day-snow-thunderstorm</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-snow-wind"></i>
+                                  <span class="icon_name">wi-day-snow-wind</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-sprinkle"></i>
+                                  <span class="icon_name">wi-day-sprinkle</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-storm-showers"></i>
+                                  <span class="icon_name">wi-day-storm-showers</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-sunny-overcast"></i>
+                                  <span class="icon_name">wi-day-sunny-overcast</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-thunderstorm"></i>
+                                  <span class="icon_name">wi-day-thunderstorm</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-windy"></i>
+                                  <span class="icon_name">wi-day-windy</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-solar-eclipse"></i>
+                                  <span class="icon_name">wi-solar-eclipse</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-hot"></i>
+                                  <span class="icon_name">wi-hot</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-cloudy-high"></i>
+                                  <span class="icon_name">wi-day-cloudy-high</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-day-light-wind"></i>
+                                  <span class="icon_name">wi-day-light-wind</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-clear"></i>
+                                  <span class="icon_name">wi-night-clear</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-cloudy"></i>
+                                  <span class="icon_name">wi-night-alt-cloudy</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-cloudy-gusts"></i>
+                                  <span class="icon_name">wi-night-alt-cloudy-gusts</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-cloudy-windy"></i>
+                                  <span class="icon_name">wi-night-alt-cloudy-windy</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-hail"></i>
+                                  <span class="icon_name">wi-night-alt-hail</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-lightning"></i>
+                                  <span class="icon_name">wi-night-alt-lightning</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-rain"></i>
+                                  <span class="icon_name">wi-night-alt-rain</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-rain-mix"></i>
+                                  <span class="icon_name">wi-night-alt-rain-mix</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-rain-wind"></i>
+                                  <span class="icon_name">wi-night-alt-rain-wind</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-showers"></i>
+                                  <span class="icon_name">wi-night-alt-showers</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-sleet"></i>
+                                  <span class="icon_name">wi-night-alt-sleet</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-sleet-storm"></i>
+                                  <span class="icon_name">wi-night-alt-sleet-storm</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-snow"></i>
+                                  <span class="icon_name">wi-night-alt-snow</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-snow-thunderstorm"></i>
+                                  <span class="icon_name">wi-night-alt-snow-thunderstorm</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-snow-wind"></i>
+                                  <span class="icon_name">wi-night-alt-snow-wind</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-sprinkle"></i>
+                                  <span class="icon_name">wi-night-alt-sprinkle</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-storm-showers"></i>
+                                  <span class="icon_name">wi-night-alt-storm-showers</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-thunderstorm"></i>
+                                  <span class="icon_name">wi-night-alt-thunderstorm</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-cloudy"></i>
+                                  <span class="icon_name">wi-night-cloudy</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-cloudy-gusts"></i>
+                                  <span class="icon_name">wi-night-cloudy-gusts</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-cloudy-windy"></i>
+                                  <span class="icon_name">wi-night-cloudy-windy</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-fog"></i>
+                                  <span class="icon_name">wi-night-fog</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-hail"></i>
+                                  <span class="icon_name">wi-night-hail</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-lightning"></i>
+                                  <span class="icon_name">wi-night-lightning</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-partly-cloudy"></i>
+                                  <span class="icon_name">wi-night-partly-cloudy</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-rain"></i>
+                                  <span class="icon_name">wi-night-rain</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-rain-mix"></i>
+                                  <span class="icon_name">wi-night-rain-mix</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-rain-wind"></i>
+                                  <span class="icon_name">wi-night-rain-wind</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-showers"></i>
+                                  <span class="icon_name">wi-night-showers</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-sleet"></i>
+                                  <span class="icon_name">wi-night-sleet</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-sleet-storm"></i>
+                                  <span class="icon_name">wi-night-sleet-storm</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-snow"></i>
+                                  <span class="icon_name">wi-night-snow</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-snow-thunderstorm"></i>
+                                  <span class="icon_name">wi-night-snow-thunderstorm</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-snow-wind"></i>
+                                  <span class="icon_name">wi-night-snow-wind</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-sprinkle"></i>
+                                  <span class="icon_name">wi-night-sprinkle</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-storm-showers"></i>
+                                  <span class="icon_name">wi-night-storm-showers</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-thunderstorm"></i>
+                                  <span class="icon_name">wi-night-thunderstorm</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-lunar-eclipse"></i>
+                                  <span class="icon_name">wi-lunar-eclipse</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-stars"></i>
+                                  <span class="icon_name">wi-stars</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-storm-showers"></i>
+                                  <span class="icon_name">wi-storm-showers</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-thunderstorm"></i>
+                                  <span class="icon_name">wi-thunderstorm</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-cloudy-high"></i>
+                                  <span class="icon_name">wi-night-alt-cloudy-high</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-cloudy-high"></i>
+                                  <span class="icon_name">wi-night-cloudy-high</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-night-alt-partly-cloudy"></i>
+                                  <span class="icon_name">wi-night-alt-partly-cloudy</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-cloud"></i>
+                                  <span class="icon_name">wi-cloud</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-cloudy"></i>
+                                  <span class="icon_name">wi-cloudy</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-cloudy-gusts"></i>
+                                  <span class="icon_name">wi-cloudy-gusts</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-cloudy-windy"></i>
+                                  <span class="icon_name">wi-cloudy-windy</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-fog"></i>
+                                  <span class="icon_name">wi-fog</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-hail"></i>
+                                  <span class="icon_name">wi-hail</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-rain"></i>
+                                  <span class="icon_name">wi-rain</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-rain-mix"></i>
+                                  <span class="icon_name">wi-rain-mix</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-rain-wind"></i>
+                                  <span class="icon_name">wi-rain-wind</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-showers"></i>
+                                  <span class="icon_name">wi-showers</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-sleet"></i>
+                                  <span class="icon_name">wi-sleet</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-snow"></i>
+                                  <span class="icon_name">wi-snow</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-sprinkle"></i>
+                                  <span class="icon_name">wi-sprinkle</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-storm-showers"></i>
+                                  <span class="icon_name">wi-storm-showers</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-thunderstorm"></i>
+                                  <span class="icon_name">wi-thunderstorm</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-snow-wind"></i>
+                                  <span class="icon_name">wi-snow-wind</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-snow"></i>
+                                  <span class="icon_name">wi-snow</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-smog"></i>
+                                  <span class="icon_name">wi-smog</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-smoke"></i>
+                                  <span class="icon_name">wi-smoke</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-lightning"></i>
+                                  <span class="icon_name">wi-lightning</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-raindrops"></i>
+                                  <span class="icon_name">wi-raindrops</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-raindrop"></i>
+                                  <span class="icon_name">wi-raindrop</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-dust"></i>
+                                  <span class="icon_name">wi-dust</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-snowflake-cold"></i>
+                                  <span class="icon_name">wi-snowflake-cold</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-windy"></i>
+                                  <span class="icon_name">wi-windy</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-strong-wind"></i>
+                                  <span class="icon_name">wi-strong-wind</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-sandstorm"></i>
+                                  <span class="icon_name">wi-sandstorm</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-earthquake"></i>
+                                  <span class="icon_name">wi-earthquake</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-fire"></i>
+                                  <span class="icon_name">wi-fire</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-flood"></i>
+                                  <span class="icon_name">wi-flood</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-meteor"></i>
+                                  <span class="icon_name">wi-meteor</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-tsunami"></i>
+                                  <span class="icon_name">wi-tsunami</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-volcano"></i>
+                                  <span class="icon_name">wi-volcano</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-hurricane"></i>
+                                  <span class="icon_name">wi-hurricane</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-tornado"></i>
+                                  <span class="icon_name">wi-tornado</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-small-craft-advisory"></i>
+                                  <span class="icon_name">wi-small-craft-advisory</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-gale-warning"></i>
+                                  <span class="icon_name">wi-gale-warning</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-storm-warning"></i>
+                                  <span class="icon_name">wi-storm-warning</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-hurricane-warning"></i>
+                                  <span class="icon_name">wi-hurricane-warning</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind-direction"></i>
+                                  <span class="icon_name">wi-wind-direction</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-alien"></i>
+                                  <span class="icon_name">wi-alien</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-celsius"></i>
+                                  <span class="icon_name">wi-celsius</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-fahrenheit"></i>
+                                  <span class="icon_name">wi-fahrenheit</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-degrees"></i>
+                                  <span class="icon_name">wi-degrees</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-thermometer"></i>
+                                  <span class="icon_name">wi-thermometer</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-thermometer-exterior"></i>
+                                  <span class="icon_name">wi-thermometer-exterior</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-thermometer-internal"></i>
+                                  <span class="icon_name">wi-thermometer-internal</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-cloud-down"></i>
+                                  <span class="icon_name">wi-cloud-down</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-cloud-up"></i>
+                                  <span class="icon_name">wi-cloud-up</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-cloud-refresh"></i>
+                                  <span class="icon_name">wi-cloud-refresh</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-horizon"></i>
+                                  <span class="icon_name">wi-horizon</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-horizon-alt"></i>
+                                  <span class="icon_name">wi-horizon-alt</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-sunrise"></i>
+                                  <span class="icon_name">wi-sunrise</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-sunset"></i>
+                                  <span class="icon_name">wi-sunset</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moonrise"></i>
+                                  <span class="icon_name">wi-moonrise</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moonset"></i>
+                                  <span class="icon_name">wi-moonset</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-refresh"></i>
+                                  <span class="icon_name">wi-refresh</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-refresh-alt"></i>
+                                  <span class="icon_name">wi-refresh-alt</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-umbrella"></i>
+                                  <span class="icon_name">wi-umbrella</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-barometer"></i>
+                                  <span class="icon_name">wi-barometer</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-humidity"></i>
+                                  <span class="icon_name">wi-humidity</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-na"></i>
+                                  <span class="icon_name">wi-na</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-train"></i>
+                                  <span class="icon_name">wi-train</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-new"></i>
+                                  <span class="icon_name">wi-moon-new</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waxing-crescent-1"></i>
+                                  <span class="icon_name">wi-moon-waxing-crescent-1</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waxing-crescent-2"></i>
+                                  <span class="icon_name">wi-moon-waxing-crescent-2</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waxing-crescent-3"></i>
+                                  <span class="icon_name">wi-moon-waxing-crescent-3</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waxing-crescent-4"></i>
+                                  <span class="icon_name">wi-moon-waxing-crescent-4</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waxing-crescent-5"></i>
+                                  <span class="icon_name">wi-moon-waxing-crescent-5</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waxing-crescent-6"></i>
+                                  <span class="icon_name">wi-moon-waxing-crescent-6</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-first-quarter"></i>
+                                  <span class="icon_name">wi-moon-first-quarter</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waxing-gibbous-1"></i>
+                                  <span class="icon_name">wi-moon-waxing-gibbous-1</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waxing-gibbous-2"></i>
+                                  <span class="icon_name">wi-moon-waxing-gibbous-2</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waxing-gibbous-3"></i>
+                                  <span class="icon_name">wi-moon-waxing-gibbous-3</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waxing-gibbous-4"></i>
+                                  <span class="icon_name">wi-moon-waxing-gibbous-4</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waxing-gibbous-5"></i>
+                                  <span class="icon_name">wi-moon-waxing-gibbous-5</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waxing-gibbous-6"></i>
+                                  <span class="icon_name">wi-moon-waxing-gibbous-6</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-full"></i>
+                                  <span class="icon_name">wi-moon-full</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waning-gibbous-1"></i>
+                                  <span class="icon_name">wi-moon-waning-gibbous-1</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waning-gibbous-2"></i>
+                                  <span class="icon_name">wi-moon-waning-gibbous-2</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waning-gibbous-3"></i>
+                                  <span class="icon_name">wi-moon-waning-gibbous-3</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waning-gibbous-4"></i>
+                                  <span class="icon_name">wi-moon-waning-gibbous-4</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waning-gibbous-5"></i>
+                                  <span class="icon_name">wi-moon-waning-gibbous-5</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waning-gibbous-6"></i>
+                                  <span class="icon_name">wi-moon-waning-gibbous-6</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-third-quarter"></i>
+                                  <span class="icon_name">wi-moon-third-quarter</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waning-crescent-1"></i>
+                                  <span class="icon_name">wi-moon-waning-crescent-1</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waning-crescent-2"></i>
+                                  <span class="icon_name">wi-moon-waning-crescent-2</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waning-crescent-3"></i>
+                                  <span class="icon_name">wi-moon-waning-crescent-3</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waning-crescent-4"></i>
+                                  <span class="icon_name">wi-moon-waning-crescent-4</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waning-crescent-5"></i>
+                                  <span class="icon_name">wi-moon-waning-crescent-5</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-waning-crescent-6"></i>
+                                  <span class="icon_name">wi-moon-waning-crescent-6</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-new"></i>
+                                  <span class="icon_name">wi-moon-alt-new</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waxing-crescent-1"></i>
+                                  <span class="icon_name">wi-moon-alt-waxing-crescent-1</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waxing-crescent-2"></i>
+                                  <span class="icon_name">wi-moon-alt-waxing-crescent-2</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waxing-crescent-3"></i>
+                                  <span class="icon_name">wi-moon-alt-waxing-crescent-3</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waxing-crescent-4"></i>
+                                  <span class="icon_name">wi-moon-alt-waxing-crescent-4</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waxing-crescent-5"></i>
+                                  <span class="icon_name">wi-moon-alt-waxing-crescent-5</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waxing-crescent-6"></i>
+                                  <span class="icon_name">wi-moon-alt-waxing-crescent-6</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-first-quarter"></i>
+                                  <span class="icon_name">wi-moon-alt-first-quarter</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waxing-gibbous-1"></i>
+                                  <span class="icon_name">wi-moon-alt-waxing-gibbous-1</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waxing-gibbous-2"></i>
+                                  <span class="icon_name">wi-moon-alt-waxing-gibbous-2</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waxing-gibbous-3"></i>
+                                  <span class="icon_name">wi-moon-alt-waxing-gibbous-3</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waxing-gibbous-4"></i>
+                                  <span class="icon_name">wi-moon-alt-waxing-gibbous-4</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waxing-gibbous-5"></i>
+                                  <span class="icon_name">wi-moon-alt-waxing-gibbous-5</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waxing-gibbous-6"></i>
+                                  <span class="icon_name">wi-moon-alt-waxing-gibbous-6</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-full"></i>
+                                  <span class="icon_name">wi-moon-alt-full</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waning-gibbous-1"></i>
+                                  <span class="icon_name">wi-moon-alt-waning-gibbous-1</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waning-gibbous-2"></i>
+                                  <span class="icon_name">wi-moon-alt-waning-gibbous-2</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waning-gibbous-3"></i>
+                                  <span class="icon_name">wi-moon-alt-waning-gibbous-3</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waning-gibbous-4"></i>
+                                  <span class="icon_name">wi-moon-alt-waning-gibbous-4</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waning-gibbous-5"></i>
+                                  <span class="icon_name">wi-moon-alt-waning-gibbous-5</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waning-gibbous-6"></i>
+                                  <span class="icon_name">wi-moon-alt-waning-gibbous-6</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-third-quarter"></i>
+                                  <span class="icon_name">wi-moon-alt-third-quarter</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waning-crescent-1"></i>
+                                  <span class="icon_name">wi-moon-alt-waning-crescent-1</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waning-crescent-2"></i>
+                                  <span class="icon_name">wi-moon-alt-waning-crescent-2</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waning-crescent-3"></i>
+                                  <span class="icon_name">wi-moon-alt-waning-crescent-3</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waning-crescent-4"></i>
+                                  <span class="icon_name">wi-moon-alt-waning-crescent-4</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waning-crescent-5"></i>
+                                  <span class="icon_name">wi-moon-alt-waning-crescent-5</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-moon-alt-waning-crescent-6"></i>
+                                  <span class="icon_name">wi-moon-alt-waning-crescent-6</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-time-1"></i>
+                                  <span class="icon_name">wi-time-1</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-time-2"></i>
+                                  <span class="icon_name">wi-time-2</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-time-3"></i>
+                                  <span class="icon_name">wi-time-3</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-time-4"></i>
+                                  <span class="icon_name">wi-time-4</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-time-5"></i>
+                                  <span class="icon_name">wi-time-5</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-time-6"></i>
+                                  <span class="icon_name">wi-time-6</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-time-7"></i>
+                                  <span class="icon_name">wi-time-7</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-time-8"></i>
+                                  <span class="icon_name">wi-time-8</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-time-9"></i>
+                                  <span class="icon_name">wi-time-9</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-time-10"></i>
+                                  <span class="icon_name">wi-time-10</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-time-11"></i>
+                                  <span class="icon_name">wi-time-11</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-time-12"></i>
+                                  <span class="icon_name">wi-time-12</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-direction-up"></i>
+                                  <span class="icon_name">wi-direction-up</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-direction-up-right"></i>
+                                  <span class="icon_name">wi-direction-up-right</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-direction-right"></i>
+                                  <span class="icon_name">wi-direction-right</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-direction-down-right"></i>
+                                  <span class="icon_name">wi-direction-down-right</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-direction-down"></i>
+                                  <span class="icon_name">wi-direction-down</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-direction-down-left"></i>
+                                  <span class="icon_name">wi-direction-down-left</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-direction-left"></i>
+                                  <span class="icon_name">wi-direction-left</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-direction-up-left"></i>
+                                  <span class="icon_name">wi-direction-up-left</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind towards-0-deg"></i>
+                                  <span class="icon_name">towards-0-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind towards-23-deg"></i>
+                                  <span class="icon_name">towards-23-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind towards-45-deg"></i>
+                                  <span class="icon_name">towards-45-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind towards-68-deg"></i>
+                                  <span class="icon_name">towards-68-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind towards-90-deg"></i>
+                                  <span class="icon_name">towards-90-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind towards-113-deg"></i>
+                                  <span class="icon_name">towards-113-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind towards-135-deg"></i>
+                                  <span class="icon_name">towards-135-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind towards-158-deg"></i>
+                                  <span class="icon_name">towards-158-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind towards-180-deg"></i>
+                                  <span class="icon_name">towards-180-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind towards-203-deg"></i>
+                                  <span class="icon_name">towards-203-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind towards-225-deg"></i>
+                                  <span class="icon_name">towards-225-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind towards-248-deg"></i>
+                                  <span class="icon_name">towards-248-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind towards-270-deg"></i>
+                                  <span class="icon_name">towards-270-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind towards-293-deg"></i>
+                                  <span class="icon_name">towards-293-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind towards-313-deg"></i>
+                                  <span class="icon_name">towards-313-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind towards-336-deg"></i>
+                                  <span class="icon_name">towards-336-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind from-180-deg"></i>
+                                  <span class="icon_name">from-180-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind from-203-deg"></i>
+                                  <span class="icon_name">from-203-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind from-225-deg"></i>
+                                  <span class="icon_name">from-225-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind from-248-deg"></i>
+                                  <span class="icon_name">from-248-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind from-270-deg"></i>
+                                  <span class="icon_name">from-270-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind from-293-deg"></i>
+                                  <span class="icon_name">from-293-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind from-313-deg"></i>
+                                  <span class="icon_name">from-313-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind from-336-deg"></i>
+                                  <span class="icon_name">from-336-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind from-0-deg"></i>
+                                  <span class="icon_name">from-0-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind from-23-deg"></i>
+                                  <span class="icon_name">from-23-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind from-45-deg"></i>
+                                  <span class="icon_name">from-45-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind from-68-deg"></i>
+                                  <span class="icon_name">from-68-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind from-90-deg"></i>
+                                  <span class="icon_name">from-90-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind from-113-deg"></i>
+                                  <span class="icon_name">from-113-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind from-135-deg"></i>
+                                  <span class="icon_name">from-135-deg</span>
+                              </li>
+                              <li>
+                                  <i class="wi wi-wind from-158-deg"></i>
+                                  <span class="icon_name">from-158-deg</span>
+                              </li>
+                          </ul>
+                      </div>
+
+                    </div><!-- /lobicard body -->
+                </div><!-- /lobicard -->
+                    
+                </div><!-- /content -->
+
+              </div><!-- /content-wrapper -->
+            <footer class="main-footer pl-3">
+                <div class="float-right">AdminPix</div>
+                <p class="py-0 my-0"><strong class="fs-13">Copyright &copy; 2019</strong> All rights reserved.  <span><i class="fa fa-heart"></i></span></p>
+            </footer>
+        </div> <!-- ./wrapper -->
+
+        <!-- Jquery -->
+        <script src="assets/dist/js/jquery.min.js"></script>
+        <!-- lobicard -->
+        <script src="assets/plugins/lobicard/js/jquery-ui.min.js"></script>
+        <script src="assets/plugins/lobicard/js/tether.min.js"></script>
+        <script src="assets/plugins/lobicard/js/lobicard.js"></script>
+        <!-- Bootstrap -->
+        <script src="assets/bootstrap/js/popper.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <!-- metisMenu -->
+        <script src="assets/plugins/menu/metisMenu.min.js"></script>
+        <!-- scroll bar-->
+        <script src='assets/plugins/scroll/dist/jquery.nicescroll.min.js'></script>
+        <script  src="assets/plugins/scroll/dist/scroll-active.js"></script>
+        <!--main js-->
+        <script src="assets/dist/js/main.js"></script>
+
+    </body>
+</html>

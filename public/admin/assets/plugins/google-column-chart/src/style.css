@@ -1,0 +1,14 @@
+body{
+  background: -webkit-linear-gradient(50deg,#45cafc,#303f9f)!important;
+    background: -o-linear-gradient(50deg,#45cafc,#303f9f)!important;
+    background: linear-gradient(40deg,#45cafc,#303f9f)!important;
+  
+}
+div#columnchart_material{
+  width: 60%;
+    height: 400px;
+    padding: 20px;
+    background: #fff;
+    margin-top: 25px;
+  margin: 0 auto;
+}

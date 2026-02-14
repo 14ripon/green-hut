@@ -1,0 +1,229 @@
+
+.form-wizard-tolal-steps-3 .form-wizard-step { 
+	position: relative;
+	float: left; 
+	width: 33.33%; 
+	padding: 0 5px; 
+	position:relative;
+}
+.form-wizard-tolal-steps-4 .form-wizard-step { 
+	width: 95%; 
+	margin-left:15px;
+	margin-right:5px;
+	padding: 5px;
+	background: #E7F2F3;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	color:#000;
+	position:relative;
+	
+}
+
+.form-wizard-tolal-steps-4 .form-wizard-step{ 
+	width: 22%; 
+	margin-left:15px;
+	margin-right:5px;
+	padding: 5px;
+	background: #E7F2F3;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	color:#000;
+	position:relative;
+	padding: 15px;
+	text-align:center;
+	float:left;
+}
+@media only screen and (min-width:992px) and (max-width:1199px){
+	.form-wizard-tolal-steps-4 .form-wizard-step{
+		width:22%;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:991px){
+	.form-wizard-tolal-steps-4 .form-wizard-step{
+		width:45%;
+	}
+}
+@media (max-width:575px){
+	.form-wizard-tolal-steps-4 .form-wizard-step{
+		width:95%;
+	}
+}
+
+.wizard_heading {
+    color: #10585f;
+    font-size: 17px;
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cbd9da;
+    font-style: italic;
+	text-align:right;
+}
+.btn-previous {
+    background: #048a96;
+    color: #fff;
+}
+
+
+.form-wizard-step.activated,
+.form-wizard-step.active{
+	background-color:#10595F;
+	color:#fff;
+	position:relative;
+}
+
+
+
+.form-wizard-step.active::before {
+	content: "";
+	border-bottom: 10px solid transparent;
+	border-top: 10px solid transparent;
+	border-right: 10px solid #10595F;
+	position: absolute;
+	top: 40%;
+	right: 100%;
+	z-index: 10;
+}
+.form-group label{
+	float-right;
+}
+
+
+
+.form-wizard-tolal-steps-5 .form-wizard-step { 
+	position: relative;
+	float: left;
+	width: 20%;
+	padding: 0 5px;
+}
+
+.form-wizard-step-icon {
+	display: inline-block;
+	width: 40px; 
+	height: 40px; 
+	margin-top: 4px; 
+	background: #ddd;
+	font-size: 16px; 
+	color: #777; 
+	line-height: 40px;
+	-moz-border-radius: 50%; 
+	-webkit-border-radius: 50%; 
+	border-radius: 50%;
+	text-align:center;
+}
+.form-wizard-step.activated .form-wizard-step-icon {
+	background: #0315ea; 
+	border: 1px solid #fff; 
+	color: #fff; 
+	line-height: 38px;
+}
+.form-wizard-step.active .form-wizard-step-icon {
+	background: #fff; 
+	border: 1px solid #fff; 
+	color: #0315ea; 
+	line-height: 38px;
+}
+
+.form-wizard fieldset { 
+	display: none; 
+	text-align: left; 
+	border:0px !important
+}
+
+.form-wizard-buttons { text-align: right; }
+
+.form-wizard .input-error { border-color: red;}
+
+/** image uploader **/
+.image-upload a[data-action] {
+  cursor: pointer;
+  color: #555;
+  font-size: 18px;
+  line-height: 24px;
+  transition: color 0.2s;
+}
+.image-upload a[data-action] i {
+  width: 1.25em;
+  text-align: center;
+}
+.image-upload a[data-action]:hover {
+  color: #0315ea;
+}
+.image-upload a[data-action].disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.image-upload a[data-action].disabled:hover {
+  color: #555;
+}
+.settings_wrap{
+	margin-top:20px;
+}
+.image_picker .settings_wrap {
+  overflow: hidden;
+  position: relative;
+}
+.image_picker .settings_wrap .drop_target,
+.image_picker .settings_wrap .settings_actions {
+  float: left;
+}
+.image_picker .settings_wrap .drop_target {
+  margin-right: 18px;
+}
+.image_picker .settings_wrap .settings_actions {
+	float: left;
+	margin-top: 100px;
+	margin-left: 20px;
+}
+.settings_actions.vertical a {
+  display: block;
+}
+.drop_target {
+	position: relative;
+	cursor: pointer;
+	transition: all 0.2s;
+    width: 250px;
+    height: 250px;
+    background: #f2f2f2;
+    border-radius: 100%;
+    margin: 0 auto 25px auto;
+    overflow: hidden;
+    border: 8px solid #E0E0E0;
+}
+.drop_target input[type="file"] {
+  visibility: hidden;
+}
+.drop_target::before {
+	content: 'Drop Hear';
+	font-family: FontAwesome;
+	position: absolute;
+	display: block;
+	width: 100%;
+	line-height: 220px;
+	text-align: center;
+	font-size: 40px;
+	color: rgba(0, 0, 0, 0.3);
+	transition: color 0.2s;
+}
+.drop_target:hover,
+.drop_target.dropping {
+  background: #f80;
+  border-top-color: #cc6d00;
+}
+.drop_target:hover:before,
+.drop_target.dropping:before {
+  color: rgba(0, 0, 0, 0.6);
+}
+.drop_target .image_preview {
+  width: 100%;
+  height: 100%;
+  background: no-repeat center;
+  background-size: contain;
+  position: relative;
+  z-index: 2;
+}
+.center {
+    padding-left: 30%;
+    padding-right: 10%;
+}
+

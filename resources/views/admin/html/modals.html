@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Adminpix</title>
+        <link rel="shortcut icon" href="assets/dist/img/favicon.png" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {families: ['Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i']},
+                active: function () {
+                    sessionStorage.fonts = true;
+                }
+            });
+        </script>
+        <!-- START GLOBAL MANDATORY STYLE -->
+        <link href="assets/dist/css/base.css" rel="stylesheet" type="text/css">
+        <!-- START PAGE LABEL PLUGINS --> 
+        <link href="assets/plugins/modals/modal-component.css" rel="stylesheet" type="text/css"/>
+        <!-- START THEME LAYOUT STYLE -->
+        <link href="assets/dist/css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div class="preloader"></div>
+        <!-- Site wrapper -->
+        <div class="wrapper">
+             <!-- Header Area -->
+            <header class="main_header">
+              <div class="logo">
+                <a href="index.html">
+                  <img class="img-fluid" src="assets/dist/img/logo.png" alt="">
+                </a>
+              </div>
+              <ul class="custom-navbar">
+                <li>
+                  <form class="d-none d-md-block" action="#">
+                    <input type="text" placeholder="Search">
+                    <button type="submit" data-toggle="tooltip" title="Search"><i class="fas fa-search"></i></button>
+                  </form>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-icon" data-toggle="dropdown"><i class="fas fa-bell"></i>
+                    <span class="badge fadeAnim">2</span>
+                  </a>
+                  <div class="dropdown-menu dropdown_box notification_box">
+                    <div class="dropdown_box-header">
+                      <h4 class="inline-block float-left"><span>2</span> new notifications</h4>
+                      <a href="#" class="float-right">Clear All</a>
+                    </div>
+                    <div class="dropdown_box-body">
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="fas fa-comment-dots"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>3 new comments</h5>
+                                <span>40 seconds ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="far fa-envelope"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>You have received 1 email</h5>
+                                <span>5 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="fas fa-dollar-sign"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>You have transferred $50</h5>
+                                <span>8 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="fas fa-thumbs-up"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>Someone likes your post</h5>
+                                <span>13 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="fas fa-ban"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>Someone banned your post</h5>
+                                <span>20 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="far fa-trash-alt"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>Someone deleted your post</h5>
+                                <span>36 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown_box-footer">
+                      <a href="#" class="footer-btn">see all notification <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-icon" data-toggle="dropdown"><i class="far fa-envelope"></i>
+                    <span class="badge fadeAnim">3</span>
+                  </a>
+                    <div class="dropdown-menu dropdown_box message-box">
+                      <div class="dropdown_box-header">
+                        <h4 class="d-block text-center"><span>3</span> new messages</h4>
+                      </div>
+                      <div class="dropdown_box-body">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Farzana Yasmin <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+
+                               </div>
+                               <span class="active-status text-danger float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar2.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Tanzil Ahmed <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-muted float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar3.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Mozammel Hoque <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-primary float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar4.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Mubin Khan <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-success float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Farzana Yasmin <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+
+                               </div>
+                               <span class="active-status text-danger float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar2.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Tanzil Ahmed <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-muted float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar3.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Mozammel Hoque <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-primary float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar4.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Mubin Khan <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-success float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown_box-footer">
+                        <a href="#" class="footer-btn">see all messages <i class="fas fa-long-arrow-alt-right"></i></a>
+                      </div>
+                  </div>
+                </li>
+                <li><a href="#" data-toggle="dropdown"><i class="fas fa-bars"></i></a>
+                    <div class="dropdown-menu dropdown_box admin-box">
+                        <ul>
+                          <li><a href="#">Superadmin</a></li>
+                          <li><a href="#">Admin</a></li>
+                          <li><a href="#">HR</a></li>
+                          <li><a href="#">Manager</a></li>
+                          <li><a href="#">Editor</a></li>
+                          <li><a href="#">Subscriber</a></li>
+                          <li><a href="#">User</a></li>
+                        </ul>
+                  </div>
+                </li>
+                <li><a href="#" data-toggle="dropdown"><i class="far fa-user"></i></a>
+                    <div class="dropdown-menu dropdown_box settings-box">
+                        <ul>
+                          <li><a href="#"><span class="pr-2"><i class="far fa-user"></i></span> User Profile</a></li>
+                          <li><a href="#"><span class="pr-2"><i class="fas fa-cog"></i></span> Settings</a></li>
+                          <li><a href="#"><span class="pr-2"><i class="ti-key"></i></span> Logout</a></li>
+                        </ul>
+                  </div>
+                </li>
+                <li><a class="d-block d-md-none pt-0 mr-2 sidebar-toggler" data-toggle="dropdown" href="#"><i class="ti-menu-alt"></i></a></li>
+
+              </ul>
+            </header><!-- /Header Area-->
+            <!-- Sidebar Area -->
+            <aside class="sidebar-wrapper">
+              <nav class="d-none d-md-block sidebar-navbar ">
+                <ul class="metismenu mb-3" id="menu1">
+                <li>
+                    <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                      <span class="left-icon"><i class="ti-home"></i></span>
+                        <span class="menu-text">Dasboard</span>
+                    </a>
+                    <ul class="submenu-angle dashboard-menu" aria-expanded="false">
+                      <li><a href="index.html">Dashbord One</a></li>
+                      <li><a href="index2.html">Dashbord Two</a></li>
+                      <li><a href="index3.html">Dashbord Three</a></li>
+                    </ul>
+                </li>
+                <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-pencil-alt"></i></span>
+                          <span class="menu-text">Forms</span>
+                      </a>
+                        <ul class="dashboard-menu">
+                          <li><a href="forms_basic.html">Basic Forms</a></li>
+                          <li><a href="forms_validation.html">Validation Forms</a></li>
+                          <li><a href="form_input_group.html">Input Group</a></li>
+                          <li><a href="form_mask.html">Form Mask</a></li>
+                          <li><a href="form_select.html">Select</a></li>
+                          <li><a href="form_touchspin.html">Touchspin</a></li>
+                          <li><a href="forms_cropper.html">Cropper</a></li>
+                          <li><a href="forms_editor_ck.html">CK Editor</a></li>
+                          <li><a href="forms_editor_summernote.html">Summernote</a></li>
+                          <li><a href="forms_editor_markdown.html">Markdown</a></li>
+                          <li><a href="forms_editor_trumbowyg.html">Trumbowyg</a></li>
+                          <li><a href="forms_wysihtml5.html">Wysihtml5</a></li>
+                          <li>
+                            <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                              <span class="menu-text">Form Wizard</span>
+                            </a>
+                            <ul class="dashboard-menu">
+                              <li><a href="form_wizard.html" class="submenu-item" >Wizard One</a></li>
+                              <li><a href="form_wizard2.html" class="submenu-item" >Wizard Two</a></li>
+                              <li><a href="form_wizard3.html" class="submenu-item" >Wizard Three</a></li>
+                              <li><a href="form_wizard4.html" class="submenu-item" >Wizard Four</a></li>
+                            </ul>
+                          </li>
+
+                        </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="fas fa-table"></i></span>
+                        <span class="menu-text">Table</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="table.html">Simple Table</a></li>
+                        <li><a href="data-table.html">Data Table</a></li>
+                        <li><a href="table_basic.html">Multiple Table</a></li>
+                        <li><a href="table_column_rendering.html">Rendering Table</a></li>
+                        <li><a href="table_record_selection.html">Record Table</a></li>
+                        <li><a href="table_scrollable.html">Scrollable Table</a></li>
+                        <li><a href="footable.html">Foo Table</a></li>
+                        <li><a href="x-editable.html">X-Editable</a></li>
+                      </ul>
+                  </li>
+                  <li class="active">
+                      <a class="has-arrow menu-item active" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="fa fa-sort-alpha-desc"></i></span>
+                        <span class="menu-text">UI Elements</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="button.html">Buttons</a></li>
+                        <li><a href="notification.html">Notification</a></li>
+                        <li><a href="panels.html">Panels</a></li>
+                        <li><a href="tabs.html">Tab</a></li>
+                        <li><a class="active" href="modals.html">Modals</a></li>
+                        <li><a href="progressbars.html">Progressber</a></li>
+                        <li><a href="list.html">List View</a></li>
+                        <li><a href="icheck_toggle_pagination.html">iCheck, Toggle</a></li>
+                        <li><a href="label-badge-alert.html">labels, Badges</a></li>
+                        <li><a href="treeview.html">Tree View</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="fa fa-bar-chart"></i></span>
+                        <span class="menu-text">Charts</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="chart-float.html">Float Chart</a></li>
+                        <li><a href="chart_morris.html">Morris Chart</a></li>
+                        <li><a href="charts_js.html">Chart JS</a></li>
+                        <li><a href="charts_am.html">Am Chart</a></li>
+                        <li><a href="chart_google.html">Google Chart</a></li>
+                        <li><a href="charts_sparklin.html">Chart Sparklin</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="fa fa-font-awesome"></i></span>
+                        <span class="menu-text">Icons</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="icons-bootstrap.html"><i class="fa fa-bold"></i>Bootstrap Icons</a></li>
+                        <li><a href="icons-fontawesome.html"><i class="fa fa-font-awesome"></i>Fontawesome</a></li>
+                        <li><a href="icons-flag.html"><i class="fa fa-flag-checkered"></i>Flag Icons</a></li>
+                        <li><a href="icons-material.html"><i class="fa fa-meetup"></i>Material Icons</a></li>
+                        <li><a href="icons-weather.html"><i class="fa fa-bolt"></i>Weather Icons </a></li>
+                        <li><a href="icons-line.html"><i class="fa fa-lemon-o"></i>Line Icons</a></li>
+                        <li><a href="icons-pe.html"><i class="fa fa-diamond"></i>Pe Icons</a></li>
+                        <li><a href="icons-socicon.html"><i class="fa fa-share-alt"></i>Socicon Icons</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-location-pin"></i></span>
+                        <span class="menu-text">Maps</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="maps_amcharts.html">Amcharts Maps</a></li>
+                        <li><a href="maps_data.html">Data Maps</a></li>
+                        <li><a href="maps_jvector.html">Jvector Maps</a></li>
+                        <li><a href="maps_google.html">Google map</a></li>
+                        <li><a href="maps_snazzy.html">Snazzy Map</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-email"></i></span>
+                        <span class="menu-text">Mailbox</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="mailbox.html">Mailbox</a></li>
+                        <li><a href="maildetails.html">Mailbox Details</a></li>
+                        <li><a href="compose.html">Compose</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-mobile"></i></span>
+                        <span class="menu-text">App View</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="invoice.html">Invoice</a></li>
+                        <li><a href="timeline.html">Vertical timeline</a></li>
+                        <li><a href="horizontal_timeline.html">Horizontal timeline</a></li>
+                        <li><a href="pricing.html">Pricing Table</a></li>
+                        <li><a href="slider.html">Slider</a></li>
+                        <li><a href="carousel.html">Carousel</a></li>
+                        <li><a href="code_editor.html">Code editor</a></li>
+                        <li><a href="gridSystem.html">Grid System</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-agenda"></i></span>
+                        <span class="menu-text">Other pages</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="forget_password.html">Forget password</a></li>
+                        <li><a href="lockscreen.html">Lockscreen</a></li>
+                        <li><a href="404.html">404 Error</a></li>
+                        <li><a href="505.html">505 Error</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                    <a href="calender.html" class="menu-item">
+                        <span class="left-icon"><i class="fa fa-calendar"></i></span>
+                        <span class="menu-text">Calender</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="blank.html" class="menu-item">
+                        <span class="left-icon"><i class="fa fa-file-o"></i></span>
+                        <span class="menu-text">Blank Page</span>
+                    </a>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-direction-alt"></i></span>
+                        <span class="menu-text">Multilevel</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="#">Level One</a></li>
+                        <li>
+                          <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                            <span class="menu-text">Level One</span>
+                          </a>
+                          <ul class="dashboard-menu">
+                            <li><a href="form_wizard.html" class="submenu-item" >Level Tow</a></li>
+                            <li>
+                              <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                                <span class="menu-text">Level Two</span>
+                              </a>
+                              <ul class="dashboard-menu">
+                                <li><a href="form_wizard.html" class="submenu-item" >Level Three</a></li>
+                                <li><a href="form_wizard2.html" class="submenu-item" >Level Three</a></li>
+                                <li><a href="form_wizard3.html" class="submenu-item" >Level Three</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="form_wizard3.html" class="submenu-item" >Level Tow</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Level One</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </nav>
+            </aside><!-- /sidebar Area-->
+              
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper px-4">
+                <!-- Main content -->
+                <div class="content">
+      					<!-- page header-->
+      					<div class="content-header">
+      					  <div class="header-icon">
+      						  <i class="pe-7s-date"></i>
+      					  </div>
+      					  <div class="header-title">
+      						  <h1>Modal</h1>
+      						  <small>Modal window examples</small>
+      						  <ul class="breadcrumb">
+      							  <li><a class="pr-2" href="index.html"><i class="pe-7s-home"></i> Home</a>/</li>
+      							  <li><a class="px-2" href="#">UI Elements</a>/</li>
+      							  <li class="active px-2">Modal</li>
+      						  </ul>
+      					  </div>
+      				  </div>
+      				  <div class="clearfix"></div>
+      				  <!-- this page conntent-->
+                <!--content header-->
+                <div class="content-header py-3 mb-0 border border-top-0 border-right-0 bg-white border-left-0">
+                  <h1 class=" text-center">Nifty Modal Window Effects</h1>
+                  <h3 class="text-center text-secondary">Some inspiration for different modal window appearances</h3>
+                </div>
+                <!--content-->
+                <div class="p-3 main-conent mb-4 bg-white py-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="column">
+                                <p class="text-right h2 ml-5">There are many possibilities for modal overlays to appear. Here are some modern ways of showing them using CSS transitions and animations.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="column">
+                                <!-- All modals added here for the demo. You would of course just have one, dynamically created -->
+                                <!-- Modal fade in & scale effect -->
+                                <div class="md-modal md-effect-1" id="modal-1">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal slide in (right) effects -->
+                                <div class="md-modal md-effect-2" id="modal-2">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal slide in (bottom) effects -->
+                                <div class="md-modal md-effect-3" id="modal-3">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal newspaper effects -->
+                                <div class="md-modal md-effect-4" id="modal-4">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal fall effects -->
+                                <div class="md-modal md-effect-5" id="modal-5">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal side fall effects -->
+                                <div class="md-modal md-effect-6" id="modal-6">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal sticky up effects -->
+                                <div class="md-modal md-effect-7" id="modal-7">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal 3D flip (horizontal) effects -->
+                                <div class="md-modal md-effect-8" id="modal-8">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal 3D flip (vertical) effects -->
+                                <div class="md-modal md-effect-9" id="modal-9">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal 3D sign effects -->
+                                <div class="md-modal md-effect-10" id="modal-10">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal super scaled effects -->
+                                <div class="md-modal md-effect-11" id="modal-11">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal just Me effects -->
+                                <div class="md-modal md-effect-12" id="modal-12">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal 3D slit effects -->
+                                <div class="md-modal md-effect-13" id="modal-13">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal 3D rotate bottom effects -->
+                                <div class="md-modal md-effect-14" id="modal-14">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal 3D rotate in left effects -->
+                                <div class="md-modal md-effect-15" id="modal-15">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal blur effects -->
+                                <div class="md-modal md-effect-16" id="modal-16">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal let me in effects -->
+                                <div class="md-modal md-effect-17" id="modal-17">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal make way! effects -->
+                                <div class="md-modal md-effect-18" id="modal-18">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal slip from top effects -->
+                                <div class="md-modal md-effect-19" id="modal-19">
+                                    <div class="md-content">
+                                        <h3>Modal Dialog</h3>
+                                        <div class="n-modal-body">
+                                            <p>This is a modal window. You can do the following things with it:</p>
+                                            <ul>
+                                                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                                                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                                                <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                                            </ul>
+                                            <button class="btn btn-base md-close">Close me!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-1">Fade in &amp; Scale</button>
+                                <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-2">Slide in (right)</button>
+                                <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-3">Slide in (bottom)</button>
+                                <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-4">Newspaper</button>
+                                <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-5">Fall</button>
+                                <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-6">Side Fall</button>
+                                <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-7">Sticky Up</button>
+                                <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-8">3D Flip (horizontal)</button>
+                                <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-9">3D Flip (vertical)</button>
+                                <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-10">3D Sign</button>
+                                <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-11">Super Scaled</button>
+                                <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-12">Just Me</button>
+                                <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-13">3D Slit</button>
+                                <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-14">3D Rotate Bottom</button>
+                                <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-15">3D Rotate In Left</button>
+                                <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-16">Blur</button>
+                                <!-- special modal that will add a perspective class to the html element -->
+                                <button class="btn btn-base md-trigger md-setperspective mr-1 mb-2" data-modal="modal-17">Let me in</button>
+                                <button class="btn btn-base md-trigger md-setperspective mr-1 mb-2" data-modal="modal-18">Make way!</button>
+                                <button class="btn btn-base md-trigger md-setperspective mr-1 mb-2" data-modal="modal-19">Slip from top</button>
+                                <!-- the overlay element -->
+                                <div class="md-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card lobicard" data-sortable="true"><!--lobipanel-->
+                    <div class="card-header">
+                        <div class="card-title">
+                            Modal
+                        </div>
+                    </div>
+                    <div class="card-block p-3"><!--lobipanelbody-->
+                        <h4 class="header-title mt0"><b>Modal windows</b></h4>
+                        <p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
+                        <p>Modal contains title, content and footer</p>
+                        <div class="">
+                            <button type="button" class="btn btn-base mb-3" data-toggle="modal" data-target="#myModal">Lunch demo modal</button>
+                        </div>
+                        <div class="mt-3">
+                            <pre>&lt;button type="button" class="btn btn-base"
+                                data-toggle="modal" data-target="#myModal"&gt;
+                                Launch demo modal
+                        &lt;/button&gt; </pre>
+                        </div>
+                        <br>
+
+                        <h4 class="header-title m-t-0"><b> Modal size and colors</b></h4>
+                        <p>Modals have two optional sizes, available via modifier classes to be placed on a .modal-dialog</p>
+                        <div class="mb-2">
+                            <button type="button" class="btn btn-purple mb-3" data-toggle="modal" data-target="#modal-lg">Large Modal</button>
+                            <button type="button" class="btn btn-purple mb-3" data-toggle="modal" data-target="#modal-sm">Small Modal</button>
+                        </div>
+                        <p class="mb-2">You can add extra class to color your modal window avalible class (<code>modal-success</code>, <code>modal-primary</code>, <code>mmodal-warning</code>,
+                            <code>hmodal-danger</code>)</p>
+                        <div class="mb-2">
+                            <button type="button" class="btn btn-base mr-1 mb-3" data-toggle="modal" data-target="#modal-success">Success</button>
+                            <button type="button" class="btn btn-primary mr-1 mb-3" data-toggle="modal" data-target="#modal-primary">Primary</button>
+                            <button type="button" class="btn btn-warning mr-1 mb-3" data-toggle="modal" data-target="#modal-warning">Warning</button>
+                            <button type="button" class="btn btn-danger mr-1 mb-3" data-toggle="modal" data-target="#modal-danger">Danger</button>
+                        </div>
+                        <div class="mt-3">
+                            <pre>
+  var modalInstance = $modal.open({
+  templateUrl: 'views/modal/modal_example2.html',
+  controller: ModalInstanceCtrl,
+  windowClass: "hmodal-success"
+  }); 
+                            </pre>
+                        </div>
+
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                  <h1 class="modal-title">Modal title</h1>
+                              </div>
+                              <div class="modal-body">
+                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+                                      layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                                      using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+                                      page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
+                                      sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
+                                      purpose (injected humour and the like).</p>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-base">Save changes</button>
+                              </div>
+                          </div><!-- /.modal-content -->
+                      </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+                  <!-- Modal large -->
+                            <div class="modal fade" id="modal-lg" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h1 class="modal-title">Modal title</h1>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+                                                layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                                                using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+                                                page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
+                                                sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
+                                                purpose (injected humour and the like).</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-base">Save changes</button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+                            <!-- Modal small -->
+                            <div class="modal fade" id="modal-sm" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-sm" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h1 class="modal-title">Modal title</h1>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+                                                layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                                                using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+                                                page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
+                                                sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
+                                                purpose (injected humour and the like).</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-base">Save changes</button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+                            <!-- Modal success -->
+                            <div class="modal fade modal-success" id="modal-success" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h1 class="modal-title">Modal title</h1>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+                                                layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                                                using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+                                                page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
+                                                sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
+                                                purpose (injected humour and the like).</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-base">Save changes</button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+                            <!-- Modal primary -->
+                            <div class="modal fade modal-primary" id="modal-primary" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h1 class="modal-title">Modal title</h1>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+                                                layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                                                using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+                                                page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
+                                                sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
+                                                purpose (injected humour and the like).</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+                            <!-- Modal warning -->
+                            <div class="modal fade modal-warning" id="modal-warning" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h1 class="modal-title">Modal title</h1>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+                                                layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                                                using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+                                                page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
+                                                sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
+                                                purpose (injected humour and the like).</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-warning">Save changes</button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+                            <!-- Modal denger -->
+                            <div class="modal fade modal-danger" id="modal-danger" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h1 class="modal-title">Modal title</h1>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+                                                layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                                                using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+                                                page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
+                                                sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
+                                                purpose (injected humour and the like).</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-danger">Save changes</button>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+                          </div><!--lobipanel body-->
+                      </div><!--lobipanel-->
+                    </div><!--col-->
+
+                    <div class="col-md-6">
+                      <div class="card lobicard" data-sortable="true"><!--lobipanel-->
+                          <div class="card-header">
+                              <div class="card-title">
+                                  Option
+                              </div>
+                          </div>
+                          <div class="card-block p-3"><!--lobipanelbody-->
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th class="w-80p">Name</th>
+                                            <th class="w-80p">type</th>
+                                            <th class="w-80p">default</th>
+                                            <th>description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>backdrop</td>
+                                            <td>boolean or the string <code>'static'</code></td>
+                                            <td>true</td>
+                                            <td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn't close the modal on click.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>keyboard</td>
+                                            <td>boolean</td>
+                                            <td>true</td>
+                                            <td>Closes the modal when escape key is pressed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>show</td>
+                                            <td>boolean</td>
+                                            <td>true</td>
+                                            <td>Shows the modal when initialized.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>remote</td>
+                                            <td>path</td>
+                                            <td>false</td>
+                                            <td>
+                                                <p><strong class="text-danger">This option is deprecated since v3.3.0 and has been removed in v4.</strong> We recommend instead using client-side templating or a data binding framework, or calling <a href="http://api.jquery.com/load/">jQuery.load</a> yourself.</p>
+                                                <p>If a remote URL is provided, <strong>content will be loaded one time</strong> via jQuery's <code>load</code> method and injected into the <code>.modal-content</code> div. If you're using the data-api, you may alternatively use the <code>href</code> attribute to specify the remote source. An example of this is shown below:</p>
+                                                <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>
+                                                <figure class="highlight"><pre>
+<code class="" data-lang="html"><span class="nt">&lt;a</span> <span class="na">data-toggle=</span> <span class="s">"modal"</span> <span class="na">hre
+f=</span><span class="s">"remote.html"</span> <span class="na">data-targe
+  t=</span><span class="s">"#modal"</span><span class="nt">&gt;</span>Click me<span class="nt">&lt;/a&gt;</span></code>
+                                                </pre></figure>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                          </div><!--lobipanel body-->
+                      </div><!--lobipanel-->
+                    </div><!--col-->
+                  </div><!--/row-->
+
+                </div><!-- /content -->
+
+              </div><!-- /content-wrapper -->
+            <footer class="main-footer pl-3">
+                <div class="float-right">AdminPix</div>
+                <p class="py-0 my-0"><strong class="fs-13">Copyright &copy; 2019</strong> All rights reserved.  <span><i class="fa fa-heart"></i></span></p>
+            </footer>
+        </div> <!-- ./wrapper -->
+
+        <!-- Jquery -->
+        <script src="assets/dist/js/jquery.min.js"></script>
+        <!-- lobicard -->
+        <script src="assets/plugins/lobicard/js/jquery-ui.min.js"></script>
+        <script src="assets/plugins/lobicard/js/tether.min.js"></script>
+        <script src="assets/plugins/lobicard/js/lobicard.js"></script>
+        <!-- Bootstrap -->
+        <script src="assets/bootstrap/js/popper.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        
+        <!-- metisMenu -->
+        <script src="assets/plugins/menu/metisMenu.min.js"></script>
+        <!-- scroll bar-->
+        <script src='assets/plugins/scroll/dist/jquery.nicescroll.min.js'></script>
+        <script  src="assets/plugins/scroll/dist/scroll-active.js"></script>
+        <!-- modals js -->
+        <script src="assets/plugins/modals/classie.js"></script>
+        <script src="assets/plugins/modals/modalEffects.js"></script>
+        <!--main js-->
+        <script src="assets/dist/js/main.js"></script>
+
+    </body>
+</html>

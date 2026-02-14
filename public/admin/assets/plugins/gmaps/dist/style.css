@@ -1,0 +1,9 @@
+#map-canvas {
+  position:relative;
+  border:1px solid #000;
+}
+#map {
+  position:absolute;
+  top:0;
+  left:0;
+}

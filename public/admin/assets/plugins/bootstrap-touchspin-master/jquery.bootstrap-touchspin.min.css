@@ -1,0 +1,47 @@
+.bootstrap-touchspin .input-group-btn-vertical{position:absolute;right:0;height:100%;z-index:11}.bootstrap-touchspin .input-group-btn-vertical>.btn{position:absolute;right:0;height:50%;padding:0;width:2em;text-align:center;line-height:1}.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up{border-radius:0 4px 0 0;top:0}.bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down{border-radius:0 0 4px 0;bottom:0}
+
+/*--- Bootstrap touchspin custom ---*/
+.input-group-prepend,
+.input-group-append,
+.input-group > .custom-select:not(:first-child), .input-group > .form-control:not(:first-child),
+.input-group > .custom-select:not(:last-child), .input-group > .form-control:not(:last-child){
+    height:100%;
+}
+.input-group-text{
+    line-height: 5px;
+}
+.input-group{
+    height:36px;
+}
+.bootstrap-touchspin .input-group-addon{
+    padding:0px;
+    border:0px;
+}
+.bootstrap-touchspin .bootstrap-touchspin-down,
+.bootstrap-touchspin .bootstrap-touchspin-up{
+    background-color: transparent;
+    color:#000;
+    border:1px solid #ced4da;
+}
+.bootstrap-touchspin-up{
+
+}
+.bootstrap-touchspin .action-btn{
+    background-color: #fff;
+    border: 1px solid #ced4da;
+}
+.input-group-sm{
+    height:28px;
+}
+.input-group-lg{
+    height:42px;
+}
+.form-touchspin .bootstrap-touchspin-down,
+.form-touchspin .bootstrap-touchspin-up{
+	background-color:#F1F3F6;
+	color:#000;
+}
+.form-touchspin .bootstrap-touchspin-down:hover,
+.form-touchspin .bootstrap-touchspin-up:hover{
+	color:#000;
+}

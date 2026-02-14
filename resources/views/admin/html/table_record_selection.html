@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Adminpix</title>
+        <link rel="shortcut icon" href="assets/dist/img/favicon.png" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {families: ['Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i']},
+                active: function () {
+                    sessionStorage.fonts = true;
+                }
+            });
+        </script>
+        <!-- START GLOBAL MANDATORY STYLE -->
+        <link href="assets/dist/css/base.css" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="assets/plugins/datatables/jquery.dataTables.min.css">
+        <!-- START THEME LAYOUT STYLE -->
+        <link href="assets/dist/css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div class="preloader"></div>
+        <!-- Site wrapper -->
+        <div class="wrapper">
+             <!-- Header Area -->
+            <header class="main_header">
+              <div class="logo">
+                <a href="index.html">
+                  <img class="img-fluid" src="assets/dist/img/logo.png" alt="">
+                </a>
+              </div>
+              <ul class="custom-navbar">
+                <li>
+                  <form class="d-none d-md-block" action="#">
+                    <input type="text" placeholder="Search">
+                    <button type="submit" data-toggle="tooltip" title="Search"><i class="fas fa-search"></i></button>
+                  </form>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-icon" data-toggle="dropdown"><i class="fas fa-bell"></i>
+                    <span class="badge fadeAnim">2</span>
+                  </a>
+                  <div class="dropdown-menu dropdown_box notification_box">
+                    <div class="dropdown_box-header">
+                      <h4 class="inline-block float-left"><span>2</span> new notifications</h4>
+                      <a href="#" class="float-right">Clear All</a>
+                    </div>
+                    <div class="dropdown_box-body">
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="fas fa-comment-dots"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>3 new comments</h5>
+                                <span>40 seconds ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="far fa-envelope"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>You have received 1 email</h5>
+                                <span>5 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="fas fa-dollar-sign"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>You have transferred $50</h5>
+                                <span>8 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="fas fa-thumbs-up"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>Someone likes your post</h5>
+                                <span>13 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="fas fa-ban"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>Someone banned your post</h5>
+                                <span>20 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="far fa-trash-alt"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>Someone deleted your post</h5>
+                                <span>36 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown_box-footer">
+                      <a href="#" class="footer-btn">see all notification <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-icon" data-toggle="dropdown"><i class="far fa-envelope"></i>
+                    <span class="badge fadeAnim">3</span>
+                  </a>
+                    <div class="dropdown-menu dropdown_box message-box">
+                      <div class="dropdown_box-header">
+                        <h4 class="d-block text-center"><span>3</span> new messages</h4>
+                      </div>
+                      <div class="dropdown_box-body">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Farzana Yasmin <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+
+                               </div>
+                               <span class="active-status text-danger float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar2.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Tanzil Ahmed <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-muted float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar3.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Mozammel Hoque <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-primary float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar4.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Mubin Khan <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-success float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Farzana Yasmin <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+
+                               </div>
+                               <span class="active-status text-danger float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar2.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Tanzil Ahmed <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-muted float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar3.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Mozammel Hoque <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-primary float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar4.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Mubin Khan <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-success float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown_box-footer">
+                        <a href="#" class="footer-btn">see all messages <i class="fas fa-long-arrow-alt-right"></i></a>
+                      </div>
+                  </div>
+                </li>
+                <li><a href="#" data-toggle="dropdown"><i class="fas fa-bars"></i></a>
+                    <div class="dropdown-menu dropdown_box admin-box">
+                        <ul>
+                          <li><a href="#">Superadmin</a></li>
+                          <li><a href="#">Admin</a></li>
+                          <li><a href="#">HR</a></li>
+                          <li><a href="#">Manager</a></li>
+                          <li><a href="#">Editor</a></li>
+                          <li><a href="#">Subscriber</a></li>
+                          <li><a href="#">User</a></li>
+                        </ul>
+                  </div>
+                </li>
+                <li><a href="#" data-toggle="dropdown"><i class="far fa-user"></i></a>
+                    <div class="dropdown-menu dropdown_box settings-box">
+                        <ul>
+                          <li><a href="#"><span class="pr-2"><i class="far fa-user"></i></span> User Profile</a></li>
+                          <li><a href="#"><span class="pr-2"><i class="fas fa-cog"></i></span> Settings</a></li>
+                          <li><a href="#"><span class="pr-2"><i class="ti-key"></i></span> Logout</a></li>
+                        </ul>
+                  </div>
+                </li>
+                <li><a class="d-block d-md-none pt-0 mr-2 sidebar-toggler" data-toggle="dropdown" href="#"><i class="ti-menu-alt"></i></a></li>
+
+              </ul>
+            </header><!-- /Header Area-->
+            <!-- Sidebar Area -->
+            <aside class="sidebar-wrapper">
+              <nav class="d-none d-md-block sidebar-navbar ">
+                <ul class="metismenu mb-3" id="menu1">
+                <li>
+                    <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                      <span class="left-icon"><i class="ti-home"></i></span>
+                        <span class="menu-text">Dasboard</span>
+                    </a>
+                    <ul class="submenu-angle dashboard-menu" aria-expanded="false">
+                      <li><a href="index.html">Dashbord One</a></li>
+                      <li><a href="index2.html">Dashbord Two</a></li>
+                      <li><a href="index3.html">Dashbord Three</a></li>
+                    </ul>
+                </li>
+                <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-pencil-alt"></i></span>
+                          <span class="menu-text">Forms</span>
+                      </a>
+                        <ul class="dashboard-menu">
+                          <li><a href="forms_basic.html">Basic Forms</a></li>
+                          <li><a href="forms_validation.html">Validation Forms</a></li>
+                          <li><a href="form_input_group.html">Input Group</a></li>
+                          <li><a href="form_mask.html">Form Mask</a></li>
+                          <li><a href="form_select.html">Select</a></li>
+                          <li><a href="form_touchspin.html">Touchspin</a></li>
+                          <li><a href="forms_cropper.html">Cropper</a></li>
+                          <li><a href="forms_editor_ck.html">CK Editor</a></li>
+                          <li><a href="forms_editor_summernote.html">Summernote</a></li>
+                          <li><a href="forms_editor_markdown.html">Markdown</a></li>
+                          <li><a href="forms_editor_trumbowyg.html">Trumbowyg</a></li>
+                          <li><a href="forms_wysihtml5.html">Wysihtml5</a></li>
+                          <li>
+                            <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                              <span class="menu-text">Form Wizard</span>
+                            </a>
+                            <ul class="dashboard-menu" >
+                              <li><a href="form_wizard.html" class="submenu-item" >Wizard One</a></li>
+                              <li><a href="form_wizard2.html" class="submenu-item" >Wizard Two</a></li>
+                              <li><a href="form_wizard3.html" class="submenu-item" >Wizard Three</a></li>
+                              <li><a href="form_wizard4.html" class="submenu-item" >Wizard Four</a></li>
+                            </ul>
+                          </li>
+
+                        </ul>
+                  </li>
+                  <li class="active">
+                      <a class="has-arrow menu-item active" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="fas fa-table"></i></span>
+                        <span class="menu-text">Table</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="table.html">Simple Table</a></li>
+                        <li><a href="data-table.html">Data Table</a></li>
+                        <li><a href="table_basic.html">Multiple Table</a></li>
+                        <li><a href="table_column_rendering.html">Rendering Table</a></li>
+                        <li><a class="active" href="table_record_selection.html">Record Table</a></li>
+                        <li><a href="table_scrollable.html">Scrollable Table</a></li>
+                        <li><a href="footable.html">Foo Table</a></li>
+                        <li><a href="x-editable.html">X-Editable</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="fa fa-sort-alpha-desc"></i></span>
+                        <span class="menu-text">UI Elements</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="button.html">Buttons</a></li>
+                        <li><a href="notification.html">Notification</a></li>
+                        <li><a href="panels.html">Panels</a></li>
+                        <li><a href="tabs.html">Tab</a></li>
+                        <li><a href="modals.html">Modals</a></li>
+                        <li><a href="progressbars.html">Progressber</a></li>
+                        <li><a href="list.html">List View</a></li>
+                        <li><a href="icheck_toggle_pagination.html">iCheck, Toggle</a></li>
+                        <li><a href="label-badge-alert.html">labels, Badges</a></li>
+                        <li><a href="treeview.html">Tree View</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="fa fa-bar-chart"></i></span>
+                        <span class="menu-text">Charts</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="chart-float.html">Float Chart</a></li>
+                        <li><a href="chart_morris.html">Morris Chart</a></li>
+                        <li><a href="charts_js.html">Chart JS</a></li>
+                        <li><a href="charts_am.html">Am Chart</a></li>
+                        <li><a href="chart_google.html">Google Chart</a></li>
+                        <li><a href="charts_sparklin.html">Chart Sparklin</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="fa fa-font-awesome"></i></span>
+                        <span class="menu-text">Icons</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="icons-bootstrap.html"><i class="fa fa-bold"></i>Bootstrap Icons</a></li>
+                        <li><a href="icons-fontawesome.html"><i class="fa fa-font-awesome"></i>Fontawesome</a></li>
+                        <li><a href="icons-flag.html"><i class="fa fa-flag-checkered"></i>Flag Icons</a></li>
+                        <li><a href="icons-material.html"><i class="fa fa-meetup"></i>Material Icons</a></li>
+                        <li><a href="icons-weather.html"><i class="fa fa-bolt"></i>Weather Icons </a></li>
+                        <li><a href="icons-line.html"><i class="fa fa-lemon-o"></i>Line Icons</a></li>
+                        <li><a href="icons-pe.html"><i class="fa fa-diamond"></i>Pe Icons</a></li>
+                        <li><a href="icons-socicon.html"><i class="fa fa-share-alt"></i>Socicon Icons</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-location-pin"></i></span>
+                        <span class="menu-text">Maps</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="maps_amcharts.html">Amcharts Maps</a></li>
+                        <li><a href="maps_data.html">Data Maps</a></li>
+                        <li><a href="maps_jvector.html">Jvector Maps</a></li>
+                        <li><a href="maps_google.html">Google map</a></li>
+                        <li><a href="maps_snazzy.html">Snazzy Map</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item active" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-email"></i></span>
+                        <span class="menu-text">Mailbox</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="mailbox.html">Mailbox</a></li>
+                        <li><a href="maildetails.html">Mailbox Details</a></li>
+                        <li><a href="compose.html">Compose</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-mobile"></i></span>
+                        <span class="menu-text">App View</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="invoice.html">Invoice</a></li>
+                        <li><a href="timeline.html">Vertical timeline</a></li>
+                        <li><a href="horizontal_timeline.html">Horizontal timeline</a></li>
+                        <li><a href="pricing.html">Pricing Table</a></li>
+                        <li><a href="slider.html">Slider</a></li>
+                        <li><a href="carousel.html">Carousel</a></li>
+                        <li><a href="code_editor.html">Code editor</a></li>
+                        <li><a href="gridSystem.html">Grid System</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-agenda"></i></span>
+                        <span class="menu-text">Other pages</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="forget_password.html">Forget password</a></li>
+                        <li><a href="lockscreen.html">Lockscreen</a></li>
+                        <li><a href="404.html">404 Error</a></li>
+                        <li><a href="505.html">505 Error</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                    <a href="calender.html" class="menu-item">
+                        <span class="left-icon"><i class="fa fa-calendar"></i></span>
+                        <span class="menu-text">Calender</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="blank.html" class="menu-item">
+                        <span class="left-icon"><i class="fa fa-file-o"></i></span>
+                        <span class="menu-text">Blank Page</span>
+                    </a>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-direction-alt"></i></span>
+                        <span class="menu-text">Multilevel</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="#">Level One</a></li>
+                        <li>
+                          <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                            <span class="menu-text">Level One</span>
+                          </a>
+                          <ul class="dashboard-menu" >
+                            <li><a href="form_wizard.html" class="submenu-item" >Level Tow</a></li>
+                            <li>
+                              <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                                <span class="menu-text">Level Two</span>
+                              </a>
+                              <ul class="dashboard-menu" >
+                                <li><a href="form_wizard.html" class="submenu-item" >Level Three</a></li>
+                                <li><a href="form_wizard2.html" class="submenu-item" >Level Three</a></li>
+                                <li><a href="form_wizard3.html" class="submenu-item" >Level Three</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="form_wizard3.html" class="submenu-item" >Level Tow</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Level One</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </nav>
+            </aside><!-- /sidebar Area-->
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper px-4">
+                <!-- Main content -->
+                
+              <div class="content record-selection-table">
+                <div class="p-4 mb-4 rounded bg-white">
+                  <span class="float-left"><i class="fas fs-18 text-primary pr-3 fa-exclamation-triangle"></i></span>
+                  <p>You can use the dom initialisation parameter to move DataTables features around the table to where you want them. See official documentation <a class="text-primary" href="https://datatables.net/examples/advanced_init/dom_multiple_elements.html" target="_blank">here.</a></p>
+                </div>
+                <div class="p-4 bg-white rounded mb-4">
+                  <div class="table_basic">
+                        <div class=" text-right">
+                            <div class="d-inline float-left my-2">
+                              <i class="fas fa-table"></i>
+                                 Record Selection
+                            </div>
+                            <div class="d-inline">
+                              <div class="dropdown d-inline">
+                              <button type="button" class="btn btn-default btn-icon-sm dropdown-toggle btn-toggle-none" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-long-arrow-alt-down"></i>
+                                 Export <i class="fs-11 fas fa-chevron-down"></i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right">
+                                <ul class="">
+                                  <li class="">
+                                    <span class="ml-2">Choose an option</span>
+                                  </li>
+                                  <li class="">
+                                    <a href="#" class="">
+                                      <i class=""></i>
+                                      <span class="">Print</span>
+                                    </a>
+                                  </li>
+                                  <li class="">
+                                    <a href="#" class="">
+                                      <i class=""></i>
+                                      <span class="">Copy</span>
+                                    </a>
+                                  </li>
+                                  <li class="">
+                                    <a href="#" class="">
+                                      <i class=""></i>
+                                      <span class="">Excel</span>
+                                    </a>
+                                  </li>
+                                  <li class="">
+                                    <a href="#" class="">
+                                      <i class=""></i>
+                                      <span class="">CSV</span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="">
+                                      <i class=""></i>
+                                      <span class="">PDF</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div> 
+                              <button class="btn btn-primary"><i class="fas fa-plus"></i> New Record</button>
+                            </div>
+                            
+                        </div>
+                        <hr>
+                      <div class="table-responsive">
+                      <table class=" table table-bordered table-hover mb-3" id="myTable">
+                              <thead>
+                              <tr>
+                                      <th class="p-3 bg-none"><input type="checkbox"> </th>
+                                      <th>Order ID</th>
+                                      <th>Country</th>
+                                      <th>Ship Address</th>
+                                      <th>Ship Data</th>
+                                      <th class="pr-3">Status</th>
+                                      <th class="pr-3">Type</th>
+                                      <th class="pr-3">Actions</th>
+                                </tr>
+                              </thead>
+                        
+                                  <tbody>
+                                    <tr>
+                                        <td class="p-3"><input type="checkbox"></td>
+                                        <td>61715-075</td>
+                                        <td>China</td>
+                                        <td>746 Pine View Junction</td>
+                                        <td>2/12/2018</td>
+                                        <td><span class="ts-primary">Canceled</span></td>
+                                        <td><span class="tt-retail">Retail</span></td>
+                                        <td>
+                                            <div class="dropdown float-left">
+                                              <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                              <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                              </ul>
+                                            </div>
+                                            <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                            <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3"><input type="checkbox"></td>
+                                        <td>63629-4697</td>
+                                        <td>Indonesia</td>
+                                        <td>01652 Fulton Trail</td>
+                                        <td>8/6/2017</td>
+                                        <td><span class="ts-danger">Danger</span></td>
+                                        <td><span class="tt-direct">Direct</span></td>
+                                        <td>
+                                            <div class="dropdown float-left">
+                                              <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                              <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                              </ul>
+                                            </div>
+                                            <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                            <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                          <td class="p-3"><input type="checkbox"></td>
+                                          <td>68084-123</td>
+                                          <td>Argentina</td>
+                                          <td>2 Pine View Park</td>
+                                          <td>5/26/2016</td>
+                                          <td><span class="ts-success">Success</span></td>
+                                          <td><span class="tt-retail">Retail</span></td>
+                                          <td>
+                                            <div class="dropdown float-left">
+                                              <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                              <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                              </ul>
+                                            </div>
+                                            <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                            <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                          <td class="p-3"><input type="checkbox"></td>
+                                          <td>67457-428</td>
+                                          <td>Indonesia</td>
+                                          <td>3050 Buell Terrace</td>
+                                          <td>7/2/2016</td>
+                                          <td><span class="ts-danger">Delivered</span></td>
+                                          <td><span class="tt-online">Online</span></td>
+                                          <td>
+                                            <div class="dropdown float-left">
+                                              <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                              <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                              </ul>
+                                            </div>
+                                            <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                            <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                          <td class="p-3"><input type="checkbox"></td>
+                                          <td>31722-529</td>
+                                          <td>Austria</td>
+                                          <td>3038 Trailsway Junction</td>
+                                          <td>5/20/2017</td>
+                                          <td><span class="ts-primary">Pending</span></td>
+                                          <td><span class="tt-retail">Retail</span></td>
+                                          <td>
+                                            <div class="dropdown float-left">
+                                              <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                              <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                              </ul>
+                                            </div>
+                                            <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                            <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                          <td class="p-3"><input type="checkbox"></td>
+                                          <td>64117-168</td>
+                                          <td>China</td>
+                                          <td>023 South Way</td>
+                                          <td>11/26/2016</td>
+                                          <td><span class="ts-primary">Pending</span></td>
+                                          <td><span class="tt-direct">Direct</span></td>
+                                          <td>
+                                            <div class="dropdown float-left">
+                                              <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                              <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                              </ul>
+                                            </div>
+                                            <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                            <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                          <td class="p-3"><input type="checkbox"></td>
+                                          <td>43857-0331</td>
+                                          <td>China</td>
+                                          <td>56482 Fairfield Terrace</td>
+                                          <td>6/28/2016</td>
+                                          <td><span class="ts-primary">Info</span></td>
+                                          <td><span class="tt-direct">Direct</span></td>
+                                          <td>
+                                            <div class="dropdown float-left">
+                                              <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                              <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                              </ul>
+                                            </div>
+                                            <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                            <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                          <td class="p-3"><input type="checkbox"></td>
+                                          <td>64980-196</td>
+                                          <td>Croatia</td>
+                                          <td>0 Elka Street</td>
+                                          <td>8/5/2016</td>
+                                          <td><span class="ts-success">Success</span></td>
+                                          <td><span class="tt-online">Online</span></td>
+                                          <td>
+                                            <div class="dropdown float-left">
+                                              <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                              <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                              </ul>
+                                            </div>
+                                            <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                            <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                          <td class="p-3"><input type="checkbox"></td>
+                                          <td>0404-0360</td>
+                                          <td>Colombia</td>
+                                          <td>38099 Ilene Hill</td>
+                                          <td>3/31/2017</td>
+                                          <td><span class="ts-primary">Info</span></td>
+                                          <td><span class="tt-retail">Retail</span></td>
+                                          <td>
+                                            <div class="dropdown float-left">
+                                              <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                              <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                              </ul>
+                                            </div>
+                                            <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                            <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                          <td class="p-3"><input type="checkbox"></td>
+                                          <td>52125-267</td>
+                                          <td>Thailand</td>
+                                          <td>8696 Barby Pass</td>
+                                          <td>1/26/2017</td>
+                                          <td><span class="ts-primary">Pending</span></td>
+                                          <td><span class="tt-direct">Direct</span></td>
+                                          <td>
+                                            <div class="dropdown float-left">
+                                              <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                              <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                              </ul>
+                                            </div>
+                                            <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                            <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                          <td class="p-3"><input type="checkbox"></td>
+                                          <td>54092-515</td>
+                                          <td>Brazil</td>
+                                          <td>32461 Ridgeway Alley</td>
+                                          <td>3/8/2017</td>
+                                          <td><span class="ts-success">Success</span></td>
+                                          <td><span class="tt-online">Online</span></td>
+                                          <td>
+                                            <div class="dropdown float-left">
+                                              <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                              <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                              </ul>
+                                            </div>
+                                            <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                            <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                          <td class="p-3"><input type="checkbox"></td>
+                                          <td>0185-0130</td>
+                                          <td>China</td>
+                                          <td>23 Walton Pass</td>
+                                          <td>4/2/2017</td>
+                                          <td><span class="ts-success">Success</span></td>
+                                          <td><span class="tt-online">Online</span></td>
+                                          <td>
+                                            <div class="dropdown float-left">
+                                              <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                              <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                              </ul>
+                                            </div>
+                                            <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                            <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                          <td class="p-3"><input type="checkbox"></td>
+                                          <td>21130-678</td>
+                                          <td>China</td>
+                                          <td>328 Glendale Hill</td>
+                                          <td>6/7/2016</td>
+                                          <td><span class="ts-success">Success</span></td>
+                                          <td><span class="tt-retail">Retail</span></td>
+                                          <td>
+                                            <div class="dropdown float-left">
+                                              <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                              <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                              </ul>
+                                            </div>
+                                            <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                            <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>40076-953</td>
+                                              <td>Portugal</td>
+                                              <td>52550 Crownhardt Court</td>
+                                              <td>10/11/2017</td>
+                                              <td><span class="ts-danger">Danger</span></td>
+                                              <td><span class="tt-direct">Direct</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>36987-3005</td>
+                                              <td>Portugal</td>
+                                              <td>548 Morrow Terrace</td>
+                                              <td>8/17/2017</td>
+                                              <td><span class="ts-danger">Danger</span></td>
+                                              <td><span class="tt-direct">Direct</span></td>
+                                              <td>
+                                                <div class="dropdown float-left">
+                                                  <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                  <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                    <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                    <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                  </ul>
+                                                </div>
+                                                <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                            </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>67510-0062</td>
+                                              <td>South Africa</td>
+                                              <td>02534 Hauk Trail</td>
+                                              <td>7/24/2016</td>
+                                              <td><span class="ts-danger">Delivered</span></td>
+                                              <td><span class="tt-direct">Direct</span></td>
+                                              <td>
+                                                <div class="dropdown float-left">
+                                                  <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                  <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                    <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                    <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                  </ul>
+                                                </div>
+                                                <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                            </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>36987-2542</td>
+                                              <td>Russia</td>
+                                              <td>19427 Sloan Road</td>
+                                              <td>3/4/2016</td>
+                                              <td><span class="ts-danger">Delivered</span></td>
+                                              <td><span class="tt-direct">Direct</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>11673-479</td>
+                                              <td>Brazil</td>
+                                              <td>191 Stone Corner Road</td>
+                                              <td>2/21/2018</td>
+                                              <td><span class="ts-success">Success</span></td>
+                                              <td><span class="tt-retail">Retail</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>47781-264</td>
+                                              <td>Ukraine</td>
+                                              <td>1481 Sauthoff Place</td>
+                                              <td>1/21/2016</td>
+                                              <td><span class="ts-success">Success</span></td>
+                                              <td><span class="tt-online">Online</span></td>
+                                              <td>
+                                            <div class="dropdown float-left">
+                                              <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                              <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                              </ul>
+                                            </div>
+                                            <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                            <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                        </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>42291-712</td>
+                                              <td>Indonesia</td>
+                                              <td>9029 Blackbird Point</td>
+                                              <td>9/6/2017</td>
+                                              <td><span class="ts-success">Success</span></td>
+                                              <td><span class="tt-retail">Retail</span></td>
+                                              <td>
+                                                <div class="dropdown float-left">
+                                                  <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                  <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                    <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                    <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                  </ul>
+                                                </div>
+                                                <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                            </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>64679-154</td>
+                                              <td>Mongolia</td>
+                                              <td>102 Holmberg Park</td>
+                                              <td>7/31/2016</td>
+                                              <td><span class="ts-danger">Danger</span></td>
+                                              <td><span class="tt-direct">Direct</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>49348-055</td>
+                                              <td>China</td>
+                                              <td>45 Butterfield Street</td>
+                                              <td>4/3/2017</td>
+                                              <td><span class="ts-primary">Penging</span></td>
+                                              <td><span class="tt-retail">Retail</span></td>
+                                              <td>
+                                                <div class="dropdown float-left">
+                                                  <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                  <ul class="dropdown-menu dropdown-menu-right">
+                                                    <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                    <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                    <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                  </ul>
+                                                </div>
+                                                <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                            </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>47593-438</td>
+                                              <td>Portugal</td>
+                                              <td>97 Larry Center</td>
+                                              <td>5/22/2016</td>
+                                              <td><span class="ts-primary">Conceled</span></td>
+                                              <td><span class="tt-retail">Retail</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>54569-0175</td>
+                                              <td>Japan</td>
+                                              <td>077 Hoffman Center</td>
+                                              <td>11/26/2017</td>
+                                              <td><span class="ts-primary">Conceled</span></td>
+                                              <td><span class="tt-retail">Retail</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>0093-1016</td>
+                                              <td>Indonesia</td>
+                                              <td>3150 Cherokee Center</td>
+                                              <td>4/12/2018</td>
+                                              <td><span class="ts-primary">Info</span></td>
+                                              <td><span class="tt-retail">Direct</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>0093-5142</td>
+                                              <td>China</td>
+                                              <td>289 Badeau Alley</td>
+                                              <td>3/6/2018</td>
+                                              <td><span class="ts-success">Success</span></td>
+                                              <td><span class="tt-retail">Retail</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>51523-026</td>
+                                              <td>Germany</td>
+                                              <td>132 Chive Way</td>
+                                              <td>4/24/2018</td>
+                                              <td><span class="ts-success">Success</span></td>
+                                              <td><span class="tt-online">Online</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>49035-522</td>
+                                              <td>Australia</td>
+                                              <td>074 Algoma Drive</td>
+                                              <td>1/12/2017</td>
+                                              <td><span class="ts-danger">Delivered</span></td>
+                                              <td><span class="tt-direct">Direct</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>58411-198</td>
+                                              <td>Ethiopia</td>
+                                              <td>91066 Amoth Court</td>
+                                              <td>5/6/2017</td>
+                                              <td><span class="ts-primary">Info</span></td>
+                                              <td><span class="tt-retail">Retail</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                             <td class="p-3"><input type="checkbox"></td>
+                                              <td>27495-006</td>
+                                              <td>Portugal</td>
+                                              <td>3 Fairfield Junction</td>
+                                              <td>2/8/2017</td>
+                                              <td><span class="ts-primary">Pending</span></td>
+                                              <td><span class="tt-retail">Retail</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>55154-8284</td>
+                                              <td>Philippines</td>
+                                              <td>09 Sachtjen Junction</td>
+                                              <td>7/22/2017</td>
+                                              <td><span class="ts-primary">concerled</span></td>
+                                              <td><span class="tt-direct">Direct</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>62678-207</td>
+                                              <td>Libya</td>
+                                              <td>82 Thackeray Pass</td>
+                                              <td>7/22/2016</td>
+                                              <td><span class="ts-danger">Delivered</span></td>
+                                              <td><span class="tt-direct">Direct</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>68428-725</td>
+                                              <td>China</td>
+                                              <td>3 Goodland Terrace</td>
+                                              <td>4/2/2017</td>
+                                              <td><span class="ts-success">Success</span></td>
+                                              <td><span class="tt-online">Online</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>0363-0724</td>
+                                              <td>Morocco</td>
+                                              <td>9550 Weeping Birch Crossing</td>
+                                              <td>6/4/2016</td>
+                                              <td><span class="ts-primary">Info</span></td>
+                                              <td><span class="tt-retail">Retail</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>37000-102</td>
+                                              <td>Paraguay</td>
+                                              <td>1 Ridge Oak Way</td>
+                                              <td>3/5/2018</td>
+                                              <td><span class="ts-success">Success</span></td>
+                                              <td><span class="tt-online">Online</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>55289-002</td>
+                                              <td>Philippines</td>
+                                              <td>9 Vidon Terrace</td>
+                                              <td>6/29/2017</td>
+                                              <td><span class="ts-primary">Info</span></td>
+                                              <td><span class="tt-retail">Retail</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>15127-874</td>
+                                              <td>Tanzania</td>
+                                              <td>33 Anniversary Parkway</td>
+                                              <td>2/18/2018</td>
+                                              <td><span class="ts-danger">Delivered</span></td>
+                                              <td><span class="tt-direct">Direct</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>49349-123</td>
+                                              <td>Indonesia</td>
+                                              <td>77292 Bonner Plaza</td>
+                                              <td>4/14/2017</td>
+                                              <td><span class="ts-success">Success</span></td>
+                                              <td><span class="tt-online">Online</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>17089-415</td>
+                                              <td>Palestinian Territory</td>
+                                              <td>42806 Ridgeview Terrace</td>
+                                              <td>3/4/2017</td>
+                                              <td><span class="ts-danger">Delivered</span></td>
+                                              <td><span class="tt-direct">Direct</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>51327-510</td>
+                                              <td>Philippines</td>
+                                              <td>4 Linden Court</td>
+                                              <td>6/21/2017</td>
+                                              <td><span class="ts-danger">Delivered</span></td>
+                                              <td><span class="tt-direct">Direct</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>0187-2201</td>
+                                              <td>Brazil</td>
+                                              <td>5722 Buhler Place</td>
+                                              <td>6/10/2017</td>
+                                              <td><span class="ts-success">Success</span></td>
+                                              <td><span class="tt-online">Online</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>16590-890</td>
+                                              <td>Indonesia</td>
+                                              <td>54 Corry Street</td>
+                                              <td>10/27/2016</td>
+                                              <td><span class="ts-primary">Penging</span></td>
+                                              <td><span class="tt-direct">Direct</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>75862-001</td>
+                                              <td>Indonesia</td>
+                                              <td>4 Messerschmidt Point</td>
+                                              <td>11/23/2017</td>
+                                              <td><span class="ts-danger">Delivered</span></td>
+                                              <td><span class="tt-direct">Direct</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>24559-091</td>
+                                              <td>Philippines</td>
+                                              <td>5470 Forest Parkway</td>
+                                              <td>3/23/2017</td>
+                                              <td><span class="ts-primary">Conceled</span></td>
+                                              <td><span class="tt-retail">Retail</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>0007-3230</td>
+                                              <td>Russia</td>
+                                              <td>5899 Basil Place</td>
+                                              <td>10/1/2016</td>
+                                              <td><span class="ts-success">Success</span></td>
+                                              <td><span class="tt-online">Online</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>50184-1029</td>
+                                              <td>Peru</td>
+                                              <td>65560 Daystar Center</td>
+                                              <td>11/7/2017</td>
+                                              <td><span class="ts-primary">Info</span></td>
+                                              <td><span class="tt-retail">Retail</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>10819-6003</td>
+                                              <td>France</td>
+                                              <td>4981 Springs Center</td>
+                                              <td>10/30/2017</td>
+                                              <td><span class="ts-success">Success</span></td>
+                                              <td><span class="tt-online">Online</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>62750-003</td>
+                                              <td>Mongolia</td>
+                                              <td>94 Rutledge Way</td>
+                                              <td>11/2/2016</td>
+                                              <td><span class="ts-danger">Delivered</span></td>
+                                              <td><span class="tt-direct">Direct</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>68647-122</td>
+                                              <td>Philippines</td>
+                                              <td>4765 Service Hill</td>
+                                              <td>7/21/2016</td>
+                                              <td><span class="ts-success">Success</span></td>
+                                              <td><span class="tt-online">Online</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                    <tr>
+                                              <td class="p-3"><input type="checkbox"></td>
+                                              <td>36987-3093</td>
+                                              <td>China</td>
+                                              <td>373 Northwestern Plaza</td>
+                                              <td>11/27/2017</td>
+                                              <td><span class="ts-danger">Delivered</span></td>
+                                              <td><span class="tt-direct">Direct</span></td>
+                                              <td>
+                                                  <div class="dropdown float-left">
+                                                    <button type="button" class="btn btn-light dropdown-toggle " data-toggle="dropdown"><i class="fas fa-cog"></i></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a class="px-2" href="#"><i class="fas fa-edit pr-1"></i> Edit Details</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-leaf pr-1"></i> Update Status</a></li>
+                                                      <li><a class="px-2" href="#"><i class="fas fa-print pr-1"></i> Generate Report</a></li>
+                                                    </ul>
+                                                  </div>
+                                                  <button class="btn btn-light float-left mx-1"><i class="fas fa-file-alt"></i></button>
+                                                  <button class="btn btn-light float-left"><i class="fas fa-times"></i></button>
+                                              </td>
+                                        </tr>
+                                  </tbody>
+                        
+                            </table>
+                          </div>
+                          </div>
+                        </div>
+      				
+                </div><!-- /content -->
+
+              </div><!-- /content-wrapper -->
+            <footer class="main-footer pl-3">
+                <div class="float-right">AdminPix</div>
+                <p class="py-0 my-0"><strong class="fs-13">Copyright &copy; 2019</strong> All rights reserved.  <span><i class="fa fa-heart"></i></span></p>
+            </footer>
+        </div> <!-- ./wrapper -->
+
+        <!-- Jquery -->
+        <script src="assets/dist/js/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="assets/bootstrap/js/popper.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <!-- metisMenu -->
+        <script src="assets/plugins/menu/metisMenu.min.js"></script>
+        <!-- scroll bar-->
+        <script src='assets/plugins/scroll/dist/jquery.nicescroll.min.js'></script>
+        <script  src="assets/plugins/scroll/dist/scroll-active.js"></script>
+
+
+        <!--begin::Global Theme Bundle(used by all pages) -->
+               <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+         
+           
+        <!--main js-->
+        <script src="assets/dist/js/main.js"></script>
+
+        <script>
+  
+            $(document).ready( function () {
+                $('#myTable').DataTable();
+            } );
+            
+
+        </script>
+
+    </body>
+</html>

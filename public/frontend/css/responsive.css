@@ -1,0 +1,199 @@
+/* Responsive */
+/***=================================================================================================================================================================================***/
+
+@media only screen and (min-width: 1240px) {
+}
+
+@media only screen and (max-width: 1199px) {
+  section.section{
+    padding:90px 0px;
+  }
+  
+  h2{
+    font-size: 34px;
+  }
+  .ticker__item{
+    font-size: 36px;
+  }
+  .testimonial_section .testimonial_slider .item .testi-about h3{
+    font-size: 24px;
+  }
+  .ordinary_section .ordinary_slider .item .overlay h4,
+  .available_section .overlay .overlay-head h3 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  h1{
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  section.section{
+    padding:60px 0px;
+  }
+  .home-slider .h_title{
+    font-size: 30px!important;
+    line-height: 1em!important;
+  }
+  .ticker__item{
+    font-size: 28px;
+  }
+  section.contact_section .contact_right_content{
+    padding:30px;
+  }
+  section.contact_section .contact_right_content form select, 
+  section.contact_section .contact_right_content form input {
+    margin-bottom: 18px;
+    font-size: 18px!important;
+  }
+  .scrolling_section .scrolling-head p {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  .project-hero-section .other-hero-content{
+    min-height: 310px;
+  }
+  
+
+
+}
+
+@media only screen and (max-width: 767px) {
+  /*.row > div,
+  .row.col-6 > div,
+  .row.col-5 > div,
+  .row.col-4 > div,
+  .row.col-3 > div,
+  .row.col-2 > div,
+  .row.col-2 > div {
+    max-width: 100%!important;
+  }
+  .row.col-6-sm > div {
+    max-width: calc(calc(100% / 6) - 25px)!important;
+  }
+  .row.col-5-sm > div {
+    max-width: calc(calc(100% / 5) - 24px)!important;
+  }
+  .row.col-4-sm > div {
+    max-width: calc(calc(100% / 4) - 22.5px)!important;
+  }
+  .row.col-3-sm > div {
+    max-width: calc(calc(100% / 3) - 20px)!important;
+  }
+  .row.col-2-sm > div {
+    max-width: calc(calc(100% / 2) - 15px)!important;
+  }*/
+  
+  body,
+  p,.p {
+    font-size: var(--font-size-p-sm);
+  }
+  h1 {
+    font-size: var(--font-size-h1-sm);
+  }
+  h2 {
+    font-size: var(--font-size-h2-sm);
+  }
+  .btn {
+    padding: 14px 16px;
+    max-width: 100%;
+    font-size: var(--font-size-button-sm);
+  }
+  
+  .heading {
+    margin-bottom: 25px;
+  }
+  section.section {
+    padding: 50px 0px;
+  }
+  .section_01 img.d-block-sm {
+    margin-bottom: 25px;
+  }
+  input,
+  select,
+  textarea,
+  input.hs-input,
+  .input-control {
+    font-size: var(--font-size-input-sm);
+  }
+  section.contact_section .contact_right_content{
+    margin-left: 0px;
+  }
+  .scrolling_section .scrolling-head img{
+    margin-left: 0px;
+  }
+  .scrolling_section .scrolling-head p {
+        margin-left: 0px;
+        margin-bottom: 70px;
+        margin-top: 30px;
+    }
+    .testimonial_section .testimonial_slider .item{
+      flex-direction: column;
+      gap:25px;
+    }
+    .testimonial_section .testimonial_slider .item .testi-video {
+    width: 100%;
+  }
+    .testimonial_section .testimonial_slider .item .testi-about {
+    width: 80%;
+  }
+    .owl-theme.testimonial_slider .owl-nav {
+    width: 100%;    
+    justify-content: center;
+      }
+      section.contact_section .contact_right_content form select, 
+  section.contact_section .contact_right_content form input {
+    margin-bottom: 18px;
+    font-size: 16px!important;
+  }
+  footer.footer-section .row{
+    gap:25px;
+  }
+  footer.footer-section .others-links{
+    margin-top:0px;
+    flex-wrap: wrap;
+    gap:10px 20px;
+  }
+  .social-icons{
+    margin-top: 25px!important;
+  }
+  .testimonial_section .testimonial_slider .item .testi-about h3{
+    font-size: 20px;
+  }
+  .ticker__item{
+    font-size: 20px;
+  }
+  .project-section .project-navs {
+    margin-bottom: 25px;
+  }
+  .project-section .filter-form {
+    margin-bottom: 30px;
+  }
+  .btn.btn-bas {
+    padding: 8px 20px;
+    font-size: 18px;
+  }
+  h4.title{
+    font-size: 18px;
+  }
+  h3.title{
+    font-size: 24px;
+  }
+
+
+
+
+  
+}
+
+@media only screen and (max-width: 575px) {
+    .btn.btn-bas{
+      padding:8px 10px;
+      font-size: 14px;
+    }
+}
+
+/***======================================================================***/

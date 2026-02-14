@@ -1,0 +1,167 @@
+/* CSS Document */
+.btn-previous{
+	background: #048a96;
+	color: #fff;
+}
+div.joincontent{
+	position: relative;
+	width: 65%;
+  min-height: 85vh;
+	height: auto;
+	margin-top: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fcfcfc;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.12);
+
+}
+div.progresscont
+	{
+		width: 50%;
+		padding-top: 5.5%;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+	@media (max-width: 991px){
+		div.progresscont{
+			width:90%;
+		}
+	}
+	div.joincontent h5{
+		font-family: 'Noto Serif JP', sans-serif;
+		color: #34393f;
+	}
+	.progresscont .progress{
+		height:3px;
+	}
+	div.circulo{
+		width: 3em;
+		height: 3em;
+		border-radius:50%;
+		background-color: #ABD6DA;
+		padding-top: 26%;
+		cursor: pointer;
+		color:#fff;
+		
+	}
+	.activecirculo
+	{
+	transition: .5s ease all;
+	background-color: #10585F !important;	
+	}
+	.activecirculo i{
+		color: #fcfcfc !important;
+	}
+	div.circulo i{
+		font-size:18px;
+		color: #fff;
+	}
+	div.circleblocks{
+		width: 50%;
+		position: absolute;
+		top: 40px;
+		margin-top: 2.5%;
+	}
+	@media (min-width:992px) and (max-width:1199px){
+		div.circleblocks{
+			top:30px;
+		}
+	}
+	@media (min-width:768px) and (max-width:991px){
+		div.circleblocks{
+			width:90%;
+			top:30px;
+		}
+	}
+	@media (max-width:767px){
+		div.circleblocks{
+			width:85%;
+			top:22px;
+		}
+	}
+	
+	.progress-bar{
+		background-color: #45597a !important;
+	}
+	.wizard-navigation{
+		position: relative;
+		bottom: 0;
+		width: 98%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 2.5%;
+	}
+	div.registration-content > div{
+		width: 100%;
+		min-height: inherit;
+		
+	}
+	#addrescont,#verifycont,#aboutcont{
+		display: none;
+	}
+	#aboutcont{
+		
+	}
+	#addrescont{
+		
+	}
+	#verifycont{
+	
+	}
+
+#submitForm{
+	display: none;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+	background-color: #c5ccd8 !important;
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#id-cont,#proof-cont{
+    width: 100%;
+	height: 18em;
+	padding: 2.5%;
+}
+
+.uploadid{
+	border: 1px solid #c9ced6; 
+	height: 40vh;
+	position:relative;
+}
+.uploadid .form-group
+{
+	height: inherit !important;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+  div.joincontent{
+    width: 98%;
+    
+  }
+  div.registration-content{
+    padding-top: 17.5%;
+  }
+}
+

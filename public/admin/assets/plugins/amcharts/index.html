@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Adminpix</title>
+        <link rel="shortcut icon" href="assets/dist/img/favicon.png" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {families: ['Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i']},
+                active: function () {
+                    sessionStorage.fonts = true;
+                }
+            });
+        </script>
+        <!-- START GLOBAL MANDATORY STYLE -->
+        <!-- START PAGE LABEL PLUGINS --> 
+        <!-- START THEME LAYOUT STYLE -->
+    </head>
+    <body>
+        <!-- Preloader --
+          
+              
+            
+                
+                <!-- lobicard -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card lobicard" data-sortable="true">
+							<div class="card-header">
+								<div class="card-title">
+									Map with Bubbles
+								</div>
+							</div>
+							<div class="card-block p-3">
+								<div id="amchartMap1"></div>
+							</div>
+						</div><!-- /lobicard -->
+					</div>
+				</div>
+                
+                <!-- lobicard --
+                <div class="card lobicard" data-sortable="true">
+                    <div class="card-header">
+                        <div class="card-title">
+                            Location-sensitive map
+                        </div>
+                    </div>
+                    <div class="card-block p-3">
+					
+                    </div>
+                </div><!-- /lobicard -->
+                <!-- lobicard --
+                <div class="card lobicard" data-sortable="true">
+                    <div class="card-header">
+                        <div class="card-title">
+                            Animations along lines
+                        </div>
+                    </div>
+                    <div class="card-block p-3">
+                      <div id="amchartMap3"></div>
+                    </div>
+                </div><!-- /lobicard -->
+                <!-- lobicard --
+                <div class="card lobicard" data-sortable="true">
+                    <div class="card-header">
+                        <div class="card-title">
+                            US heat (choropleth) map
+                        </div>
+                    </div>
+                    <div class="card-block p-3">
+                      <div id="amchartMap4"></div>
+                    </div>
+                </div><!-- /lobicard -->
+                <!-- lobicard --
+                <div class="card lobicard" data-sortable="true">
+                    <div class="card-header">
+                        <div class="card-title">
+                            Selecting multiple areas map
+                        </div>
+                    </div>
+                    <div class="card-block p-3">
+                      <div id="amchartMap5"></div>
+                    </div>
+                </div><!-- /lobicard -->
+                    
+        <!-- Jquery -->
+        <script src="../../dist/js/jquery.min.js"></script>
+        <!-- amcharts js -->
+        <script src="ammap.js"></script>
+        <script src="worldLow.js"></script>
+        <script src="export.min.js"></script>
+        <script src="light.js"></script>
+        <script src="usaLow.js"></script>
+        <script src="amcharts-active2.js"></script>
+        <!--main js-->
+
+    </body>
+</html>

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Adminpix</title>
+        <link rel="shortcut icon" href="assets/dist/img/favicon.png" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {families: ['Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i']},
+                active: function () {
+                    sessionStorage.fonts = true;
+                }
+            });
+        </script>
+        <!-- START GLOBAL MANDATORY STYLE -->
+        <link href="assets/dist/css/base.css" rel="stylesheet" type="text/css">
+        <!-- START THEME LAYOUT STYLE -->
+        <link href="assets/dist/css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div class="preloader"></div>
+        <!-- Site wrapper -->
+        <div class="wrapper">
+             <!-- Header Area -->
+            <header class="main_header">
+              <div class="logo">
+                <a href="index.html">
+                  <img class="img-fluid" src="assets/dist/img/logo.png" alt="">
+                </a>
+              </div>
+              <ul class="custom-navbar">
+                <li>
+                  <form class="d-none d-md-block" action="#">
+                    <input type="text" placeholder="Search">
+                    <button type="submit" data-toggle="tooltip" title="Search"><i class="fas fa-search"></i></button>
+                  </form>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-icon" data-toggle="dropdown"><i class="fas fa-bell"></i>
+                    <span class="badge fadeAnim">2</span>
+                  </a>
+                  <div class="dropdown-menu dropdown_box notification_box">
+                    <div class="dropdown_box-header">
+                      <h4 class="inline-block float-left"><span>2</span> new notifications</h4>
+                      <a href="#" class="float-right">Clear All</a>
+                    </div>
+                    <div class="dropdown_box-body">
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="fas fa-comment-dots"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>3 new comments</h5>
+                                <span>40 seconds ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="far fa-envelope"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>You have received 1 email</h5>
+                                <span>5 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="fas fa-dollar-sign"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>You have transferred $50</h5>
+                                <span>8 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="fas fa-thumbs-up"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>Someone likes your post</h5>
+                                <span>13 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="fas fa-ban"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>Someone banned your post</h5>
+                                <span>20 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <div class="icon">
+                              <span><i class="far fa-trash-alt"></i></span>
+                            </div>
+                            <div class="text">
+                                <h5>Someone deleted your post</h5>
+                                <span>36 minutes ago</span>
+                             </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown_box-footer">
+                      <a href="#" class="footer-btn">see all notification <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown-icon" data-toggle="dropdown"><i class="far fa-envelope"></i>
+                    <span class="badge fadeAnim">3</span>
+                  </a>
+                    <div class="dropdown-menu dropdown_box message-box">
+                      <div class="dropdown_box-header">
+                        <h4 class="d-block text-center"><span>3</span> new messages</h4>
+                      </div>
+                      <div class="dropdown_box-body">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Farzana Yasmin <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+
+                               </div>
+                               <span class="active-status text-danger float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar2.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Tanzil Ahmed <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-muted float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar3.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Mozammel Hoque <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-primary float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar4.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Mubin Khan <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-success float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Farzana Yasmin <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+
+                               </div>
+                               <span class="active-status text-danger float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar2.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Tanzil Ahmed <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-muted float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar3.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Mozammel Hoque <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-primary float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <div class="icon">
+                                <img class="img img-fluid" src="assets/dist/img/avatar4.png" alt="">
+                              </div>
+                              <div class="text">
+                                  <h5>Mubin Khan <span>-13:40 PM</span></h5>
+                                  <span>Hey! there I'm available...</span>
+                               </div>
+                               <span class="active-status text-success float-right mt-4"><i class="fas fa-circle"></i></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown_box-footer">
+                        <a href="#" class="footer-btn">see all messages <i class="fas fa-long-arrow-alt-right"></i></a>
+                      </div>
+                  </div>
+                </li>
+                <li><a href="#" data-toggle="dropdown"><i class="fas fa-bars"></i></a>
+                    <div class="dropdown-menu dropdown_box admin-box">
+                        <ul>
+                          <li><a href="#">Superadmin</a></li>
+                          <li><a href="#">Admin</a></li>
+                          <li><a href="#">HR</a></li>
+                          <li><a href="#">Manager</a></li>
+                          <li><a href="#">Editor</a></li>
+                          <li><a href="#">Subscriber</a></li>
+                          <li><a href="#">User</a></li>
+                        </ul>
+                  </div>
+                </li>
+                <li><a href="#" data-toggle="dropdown"><i class="far fa-user"></i></a>
+                    <div class="dropdown-menu dropdown_box settings-box">
+                        <ul>
+                          <li><a href="#"><span class="pr-2"><i class="far fa-user"></i></span> User Profile</a></li>
+                          <li><a href="#"><span class="pr-2"><i class="fas fa-cog"></i></span> Settings</a></li>
+                          <li><a href="#"><span class="pr-2"><i class="ti-key"></i></span> Logout</a></li>
+                        </ul>
+                  </div>
+                </li>
+                <li><a class="d-block d-md-none pt-0 mr-2 sidebar-toggler" data-toggle="dropdown" href="#"><i class="ti-menu-alt"></i></a></li>
+
+              </ul>
+            </header><!-- /Header Area-->
+            <!-- Sidebar Area -->
+            <aside class="sidebar-wrapper">
+              <nav class="d-none d-md-block sidebar-navbar ">
+                <ul class="metismenu mb-3" id="menu1">
+                <li>
+                    <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                      <span class="left-icon"><i class="ti-home"></i></span>
+                        <span class="menu-text">Dasboard</span>
+                    </a>
+                    <ul class="submenu-angle dashboard-menu" aria-expanded="false">
+                      <li><a href="index.html">Dashbord One</a></li>
+                      <li><a href="index2.html">Dashbord Two</a></li>
+                      <li><a href="index3.html">Dashbord Three</a></li>
+                    </ul>
+                </li>
+                <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-pencil-alt"></i></span>
+                          <span class="menu-text">Forms</span>
+                      </a>
+                        <ul class="dashboard-menu">
+                          <li><a href="forms_basic.html">Basic Forms</a></li>
+                          <li><a href="forms_validation.html">Validation Forms</a></li>
+                          <li><a href="form_input_group.html">Input Group</a></li>
+                          <li><a href="form_mask.html">Form Mask</a></li>
+                          <li><a href="form_select.html">Select</a></li>
+                          <li><a href="form_touchspin.html">Touchspin</a></li>
+                          <li><a href="forms_cropper.html">Cropper</a></li>
+                          <li><a href="forms_editor_ck.html">CK Editor</a></li>
+                          <li><a href="forms_editor_summernote.html">Summernote</a></li>
+                          <li><a href="forms_editor_markdown.html">Markdown</a></li>
+                          <li><a href="forms_editor_trumbowyg.html">Trumbowyg</a></li>
+                          <li><a href="forms_wysihtml5.html">Wysihtml5</a></li>
+                          <li>
+                            <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                              <span class="menu-text">Form Wizard</span>
+                            </a>
+                            <ul class="dashboard-menu" >
+                              <li><a href="form_wizard.html" class="submenu-item" >Wizard One</a></li>
+                              <li><a href="form_wizard2.html" class="submenu-item" >Wizard Two</a></li>
+                              <li><a href="form_wizard3.html" class="submenu-item" >Wizard Three</a></li>
+                              <li><a href="form_wizard4.html" class="submenu-item" >Wizard Four</a></li>
+                            </ul>
+                          </li>
+
+                        </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="fas fa-table"></i></span>
+                        <span class="menu-text">Table</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="table.html">Simple Table</a></li>
+                        <li><a href="data-table.html">Data Table</a></li>
+                        <li><a href="table_basic.html">Multiple Table</a></li>
+                        <li><a href="table_column_rendering.html">Rendering Table</a></li>
+                        <li><a href="table_record_selection.html">Record Table</a></li>
+                        <li><a href="table_scrollable.html">Scrollable Table</a></li>
+                        <li><a href="footable.html">Foo Table</a></li>
+                        <li><a href="x-editable.html">X-Editable</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="fa fa-sort-alpha-desc"></i></span>
+                        <span class="menu-text">UI Elements</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="button.html">Buttons</a></li>
+                        <li><a href="notification.html">Notification</a></li>
+                        <li><a href="panels.html">Panels</a></li>
+                        <li><a href="tabs.html">Tab</a></li>
+                        <li><a href="modals.html">Modals</a></li>
+                        <li><a href="progressbars.html">Progressber</a></li>
+                        <li><a href="list.html">List View</a></li>
+                        <li><a href="icheck_toggle_pagination.html">iCheck, Toggle</a></li>
+                        <li><a href="label-badge-alert.html">labels, Badges</a></li>
+                        <li><a href="treeview.html">Tree View</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="fa fa-bar-chart"></i></span>
+                        <span class="menu-text">Charts</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="chart-float.html">Float Chart</a></li>
+                        <li><a href="chart_morris.html">Morris Chart</a></li>
+                        <li><a href="charts_js.html">Chart JS</a></li>
+                        <li><a href="charts_am.html">Am Chart</a></li>
+                        <li><a href="chart_google.html">Google Chart</a></li>
+                        <li><a href="charts_sparklin.html">Chart Sparklin</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="fa fa-font-awesome"></i></span>
+                        <span class="menu-text">Icons</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="icons-bootstrap.html"><i class="fa fa-bold"></i>Bootstrap Icons</a></li>
+                        <li><a href="icons-fontawesome.html"><i class="fa fa-font-awesome"></i>Fontawesome</a></li>
+                        <li><a href="icons-flag.html"><i class="fa fa-flag-checkered"></i>Flag Icons</a></li>
+                        <li><a href="icons-material.html"><i class="fa fa-meetup"></i>Material Icons</a></li>
+                        <li><a href="icons-weather.html"><i class="fa fa-bolt"></i>Weather Icons </a></li>
+                        <li><a href="icons-line.html"><i class="fa fa-lemon-o"></i>Line Icons</a></li>
+                        <li><a href="icons-pe.html"><i class="fa fa-diamond"></i>Pe Icons</a></li>
+                        <li><a href="icons-socicon.html"><i class="fa fa-share-alt"></i>Socicon Icons</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-location-pin"></i></span>
+                        <span class="menu-text">Maps</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="maps_amcharts.html">Amcharts Maps</a></li>
+                        <li><a href="maps_data.html">Data Maps</a></li>
+                        <li><a href="maps_jvector.html">Jvector Maps</a></li>
+                        <li><a href="maps_google.html">Google map</a></li>
+                        <li><a href="maps_snazzy.html">Snazzy Map</a></li>
+                      </ul>
+                  </li>
+                  <li class="active">
+                      <a class="has-arrow menu-item active" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-email"></i></span>
+                        <span class="menu-text">Mailbox</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a class="active" href="mailbox.html">Mailbox</a></li>
+                        <li><a href="maildetails.html">Mailbox Details</a></li>
+                        <li><a href="compose.html">Compose</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-mobile"></i></span>
+                        <span class="menu-text">App View</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="invoice.html">Invoice</a></li>
+                        <li><a href="timeline.html">Vertical timeline</a></li>
+                        <li><a href="horizontal_timeline.html">Horizontal timeline</a></li>
+                        <li><a href="pricing.html">Pricing Table</a></li>
+                        <li><a href="slider.html">Slider</a></li>
+                        <li><a href="carousel.html">Carousel</a></li>
+                        <li><a href="code_editor.html">Code editor</a></li>
+                        <li><a href="gridSystem.html">Grid System</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-agenda"></i></span>
+                        <span class="menu-text">Other pages</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="forget_password.html">Forget password</a></li>
+                        <li><a href="lockscreen.html">Lockscreen</a></li>
+                        <li><a href="404.html">404 Error</a></li>
+                        <li><a href="505.html">505 Error</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                    <a href="calender.html" class="menu-item">
+                        <span class="left-icon"><i class="fa fa-calendar"></i></span>
+                        <span class="menu-text">Calender</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="blank.html" class="menu-item">
+                        <span class="left-icon"><i class="fa fa-file-o"></i></span>
+                        <span class="menu-text">Blank Page</span>
+                    </a>
+                  </li>
+                  <li>
+                      <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                        <span class="left-icon"><i class="ti-direction-alt"></i></span>
+                        <span class="menu-text">Multilevel</span>
+                      </a>
+                      <ul class="dashboard-menu">
+                        <li><a href="#">Level One</a></li>
+                        <li>
+                          <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                            <span class="menu-text">Level One</span>
+                          </a>
+                          <ul class="dashboard-menu" >
+                            <li><a href="form_wizard.html" class="submenu-item" >Level Tow</a></li>
+                            <li>
+                              <a class="has-arrow menu-item" href="#" aria-expanded="false">
+                                <span class="menu-text">Level Two</span>
+                              </a>
+                              <ul class="dashboard-menu" >
+                                <li><a href="form_wizard.html" class="submenu-item" >Level Three</a></li>
+                                <li><a href="form_wizard2.html" class="submenu-item" >Level Three</a></li>
+                                <li><a href="form_wizard3.html" class="submenu-item" >Level Three</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="form_wizard3.html" class="submenu-item" >Level Tow</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Level One</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </nav>
+            </aside><!-- /sidebar Area-->
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper px-4">
+                <!-- Main content -->
+                <div class="content">
+                  <!--mailbox wrapper-->
+                    <div class="mailbox">
+                        <div class="mailbox-header">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="inbox-avatar"><img src="assets/dist/img/user2-160x160.png" class="img-circle border-green" alt="img">
+                                        <div class="inbox-avatar-text">
+                                            <div class="avatar-name">Tanzil Ahmed</div>
+                                            <div><small>Mailbox</small></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 float-right">
+                                    <div class="inbox-toolbar btn-toolbar text-right">
+                                        <div class="btn-group">
+                                            <a href="compose.html" class="btn btn-base"><span class="fa fa-pencil-square-o"></span></a>
+                                        </div>
+                                        <div class="btn-group mx-1">
+                                            <a href="" class="btn btn-default"><span class="fa fa-reply"></span></a>
+                                            <a href="" class="btn btn-default"><span class="fa fa-reply-all"></span></a>
+                                            <a href="" class="btn btn-default"><span class="fa fa-share"></span></a>
+                                        </div>
+                                        <div class="btn-group ml-1 d-none d-lg-block">
+                                            <button type="button" class="btn btn-default"><span class="fa fa-print"></span></button>
+                                        </div>
+                                        <div class="btn-group ml-1">
+                                            <button type="button" class="text-center btn btn-danger"><span class="fa fa-exclamation"></span></button>
+                                            <button type="button" class="btn btn-danger"><span class="fa fa-trash"></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="row">
+                              <div class="col-md-3 pr-md-0">
+                                <div class="p-0 inbox-nav">
+                                    <div class="mailbox-sideber">
+                                        <div class="profile-usermenu">
+                                            <h6>Mailbox</h6>
+                                            <ul class="nav">
+                                                <li class="active"><a href="#"><i class="fa fa-inbox"></i>Inbox <small class="label float-right bg-green p-1 rounded text-white">61</small></a></li>
+                                                <li><a href="compose.html"><i class="fa fa-envelope-o"></i>Send Mail</a></li>
+                                                <li><a href="#"><i class="fa fa-star-o"></i>Starred</a></li>
+                                                <li><a href="#"><i class="fa fa-trash-o"></i>Tresh </a></li>
+                                                <li><a href="#"><i class="fa fa-paperclip"></i>Attachments</a></li>
+                                            </ul>
+                                            <h6>Other</h6>
+                                            <ul class="nav">
+                                                <li><a href="#"><i class="fa fa-exclamation"></i>Spam</a></li>
+                                                <li><a href="#"><i class="fa fa-file-text-o"></i>Draft</a></li>
+                                            </ul>
+                                            <h6>Tags</h6>
+                                            <ul class="nav">
+                                                <li><a href="#"><i class="fa fa-circle color-green"></i>#sometag</a></li>
+                                                <li><a href="#"><i class="fa fa-circle color-red"></i>#anothertag</a></li>
+                                                <li><a href="#"><i class="fa fa-circle color-yellow"></i>#anotheronetag</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col-md-9 border border-right-0 border-top-0 border-bottom-0 pl-md-0">
+                                <div class="p-0 inbox-mail">
+                                    <div class="mailbox-content">
+                                        <div class="mailbox_inner">
+                                              <div class="i-check mail-check">
+                                                  <div class="pl-0 checkbox checkbox-success">
+                                                    <input id="mailid1" type="checkbox">
+                                                    <label for="mailid1"></label>
+                                                </div>
+                                              </div>
+                                              <a href="maildetails.html" class="inbox_item unread">
+                                                  <div class="inbox-avatar">
+                                                      <img src="assets/dist/img/avatar.png" alt="img">
+                                                      <div class="inbox-avatar-text">
+                                                          <div class="avatar-name">PHPClass</div>
+                                                          <div><small><span><strong>Early access: </strong><span> Added a new class: Login Class Fast Site.</span></span></small></div>
+                                                      </div>
+                                                      <div class="inbox-date d-none d-lg-block">
+                                                          <div class="date">9:27 AM</div>
+                                                          <div><small>May 27th</small></div>
+                                                      </div>
+                                                  </div>
+                                              </a>
+                                          </div>
+
+                                        <div class="mailbox_inner">
+                                            <div class="i-check mail-check">
+                                                <div class="pl-0 checkbox checkbox-success">
+                                                  <input id="mailid2" type="checkbox">
+                                                  <label for="mailid2"></label>
+                                              </div>
+                                            </div>
+                                            <a href="maildetails.html" class="inbox_item unread">
+                                                <div class="inbox-avatar">
+                                                    <img src="assets/dist/img/avatar.png" alt="img">
+                                                    <div class="inbox-avatar-text">
+                                                        <div class="avatar-name">PHPClass</div>
+                                                        <div><small><span><strong>Early access: </strong><span> Added a new class: Login Class Fast Site.</span></span></small></div>
+                                                    </div>
+                                                    <div class="inbox-date d-none d-lg-block">
+                                                        <div class="date">9:27 AM</div>
+                                                        <div><small>May 27th</small></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="mailbox_inner">
+                                            <div class="i-check mail-check">
+                                                <div class="pl-0 checkbox checkbox-success">
+                                                  <input id="mailid3" type="checkbox">
+                                                  <label for="mailid3"></label>
+                                              </div>
+                                            </div>
+                                            <a href="maildetails.html" class="inbox_item">
+                                                <div class="inbox-avatar">
+                                                    
+                                                    <img src="assets/dist/img/drupal-logos.png" class="#" alt="img">
+                                                    <div class="inbox-avatar-text">
+                                                        <div class="avatar-name">Drupal Community</div>
+                                                        <div><small><span class="bg-red badge avatar-text">MAGAZINE</span><span><span>Welcome to the Drupal Community</span></span></small></div>
+                                                    </div>
+                                                    <div class="inbox-date d-none d-lg-block">
+                                                        <div class="date">12:39 AM</div>
+                                                        <div><small>Apr 15th</small></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="mailbox_inner">
+                                            <div class="i-check mail-check">
+                                                <div class="pl-0 checkbox checkbox-success">
+                                                  <input id="mailid4" type="checkbox">
+                                                  <label for="mailid4"></label>
+                                              </div>
+                                            </div>
+                                            <a href="maildetails.html" class="inbox_item unread">
+                                                <div class="inbox-avatar">
+                                                    <img src="assets/dist/img/avatar4.png" class="" alt="img">
+                                                    <div class="inbox-avatar-text">
+                                                        <div class="avatar-name">Terri Rexer, S P N</div>
+                                                        <div><small><span><strong>Early access: </strong><span>Forget Google AdWords: Un-Limited Clicks fo</span></span></small></div>
+                                                    </div>
+                                                    <div class="inbox-date d-none d-lg-block">
+                                                        <div class="date">1:45 AM</div>
+                                                        <div><small>Jan 29th</small></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="mailbox_inner">
+                                            <div class="i-check mail-check">
+                                                <div class="pl-0 checkbox checkbox-success">
+                                                  <input id="mailid5" type="checkbox">
+                                                  <label for="mailid5"></label>
+                                              </div>
+                                            </div>
+                                            <a href="maildetails.html" class="inbox_item unread">
+                                                <div class="inbox-avatar">
+                                                    <img src="assets/dist/img/linkedin-logo.png" alt="img">
+                                                    <div class="inbox-avatar-text">
+                                                        <div class="avatar-name">LinkedIn</div>
+                                                        <div><small><span><span>Alireza: Nokia Networks, System Group and.</span></span></small></div>
+                                                    </div>
+                                                    <div class="inbox-date d-none d-lg-block">
+                                                        <div class="date">8:56 PM</div>
+                                                        <div><small>Aug 19th</small></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="mailbox_inner">
+                                            <div class="i-check mail-check">
+                                                <div class="pl-0 checkbox checkbox-success">
+                                                  <input id="mailid6" type="checkbox">
+                                                  <label for="mailid6"></label>
+                                              </div>
+                                            </div>
+                                            <a href="maildetails.html" class="inbox_item">
+                                                <div class="inbox-avatar">
+                                                    <img src="assets/dist/img/wow-slider-logo.png" alt="img">
+                                                    <div class="inbox-avatar-text">
+                                                        <div class="avatar-name">WOW Slider </div>
+                                                        <div><small><span>New WOW Slider v7.8 - 67% off</span></small></div>
+                                                    </div>
+                                                    <div class="inbox-date d-none d-lg-block">
+                                                        <div class="date">2:45 AM</div>
+                                                        <div><small>Jun 29th</small></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="mailbox_inner">
+                                            <div class="i-check mail-check">
+                                                <div class="pl-0 checkbox checkbox-success">
+                                                  <input id="mailid7" type="checkbox">
+                                                  <label for="mailid7"></label>
+                                              </div>
+                                            </div>
+                                            <a href="maildetails.html" class="inbox_item unread">
+                                                <div class="inbox-avatar">
+                                                    <img src="assets/dist/img/avatar.png" alt="img">
+                                                    <div class="inbox-avatar-text">
+                                                        <div class="avatar-name">Slaah Uddin</div>
+                                                        <div><small><span class="bg-green badge avatar-text">SOME LABEL</span><span><strong>Early access: </strong><span>The point of using Lorem Ipsum is that it has ....</span></span></small></div>
+                                                    </div>
+                                                    <div class="inbox-date d-none d-lg-block">
+                                                        <div class="date">8:45 AM</div>
+                                                        <div><small>Apr 29th</small></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="mailbox_inner">
+                                            <div class="i-check mail-check">
+                                                <div class="pl-0 checkbox checkbox-success">
+                                                  <input id="mailid8" type="checkbox">
+                                                  <label for="mailid8"></label>
+                                              </div>
+                                            </div>
+                                            <a href="maildetails.html" class="inbox_item unread">
+                                                <div class="inbox-avatar">
+                                                    <img src="assets/dist/img/avatar2.png" alt="img">
+                                                    <div class="inbox-avatar-text">
+                                                        <div class="avatar-name">Tahmina Akther</div>
+                                                        <div><small><span><strong>Early access: </strong><span>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,</span></span></small></div>
+                                                    </div>
+                                                    <div class="inbox-date d-none d-lg-block">
+                                                        <div class="date">5:45 AM</div>
+                                                        <div><small>Mar 17th</small></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="mailbox_inner">
+                                            <div class="i-check mail-check">
+                                                <div class="pl-0 checkbox checkbox-success">
+                                                  <input id="mailid9" type="checkbox">
+                                                  <label for="mailid9"></label>
+                                              </div>
+                                            </div>
+                                            <a href="maildetails.html" class="inbox_item">
+                                                <div class="inbox-avatar">
+                                                    <img src="assets/dist/img/avatar3.png" class="border-violet" alt="img">
+                                                    <div class="inbox-avatar-text">
+                                                        <div class="avatar-name">Jordyn Ouellet</div>
+                                                        <div><small><span class="bg-violet badge avatar-text">SOME LABEL</span><span><strong>Early access: </strong><span>Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit.</span></span></small></div>
+                                                    </div>
+                                                    <div class="inbox-date d-none d-lg-block">
+                                                        <div class="date">3:45 AM</div>
+                                                        <div><small>Feb 15th</small></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="mailbox_inner">
+                                            <div class="i-check mail-check">
+                                                <div class="pl-0 checkbox checkbox-success">
+                                                  <input id="mailid10" type="checkbox">
+                                                  <label for="mailid10"></label>
+                                              </div>
+                                            </div>
+                                            <a href="maildetails.html" class="inbox_item">
+                                                <div class="inbox-avatar">
+                                                    <img src="assets/dist/img/facebook-logo.png" alt="img">
+                                                    <div class="inbox-avatar-text">
+                                                        <div class="avatar-name">Facebook</div>
+                                                        <div><small><span>Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit.</span></small></div>
+                                                    </div>
+                                                    <div class="inbox-date d-none d-lg-block">
+                                                        <div class="date">1:45 AM</div>
+                                                        <div><small>Jan 29th</small></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                                
+                            </div>
+                    </div><!-- /mailbox wrapper-->
+      				
+                </div><!-- /content -->
+              </div><!-- /content-wrapper -->
+            <footer class="main-footer pl-3">
+                <div class="float-right">AdminPix</div>
+                <p class="py-0 my-0"><strong class="fs-13">Copyright &copy; 2019</strong> All rights reserved.  <span><i class="fa fa-heart"></i></span></p>
+            </footer>
+        </div> <!-- ./wrapper -->
+
+        <!-- Jquery -->
+        <script src="assets/dist/js/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="assets/bootstrap/js/popper.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <!-- metisMenu -->
+        <script src="assets/plugins/menu/metisMenu.min.js"></script>
+        <!-- scroll bar-->
+        <script src='assets/plugins/scroll/dist/jquery.nicescroll.min.js'></script>
+        <script  src="assets/plugins/scroll/dist/scroll-active.js"></script>
+        <!--main js-->
+        <script src="assets/dist/js/main.js"></script>
+
+    </body>
+</html>
