@@ -37,6 +37,7 @@
                         >
                             Log in
                         </a>
+                        <h5>Hellow World!</h5>
 
                         @if (Route::has('register'))
                             <a

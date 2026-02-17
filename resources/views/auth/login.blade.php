@@ -47,7 +47,7 @@
                         <label class="control-label">Email</label>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input id="username" type="email" class="form-control" value="{{ old('email') }}admin@admin.com" name="email" placeholder="admin@admin.com">
+                            <input id="username" type="email" class="form-control" value="{{ old('email') }}zhripon97@gmail.com" name="email" placeholder="admin@admin.com">
 
                         </div>
                         @error('email')
@@ -59,7 +59,7 @@
                         <label class="control-label">Password</label>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-key"></i></span>
-                            <input id="pass" type="password" class="form-control" name="password" value="11111111" placeholder="Password">
+                            <input id="pass" type="password" class="form-control" name="password" value="88888888" placeholder="Password">
                             @error('password')
                             <div>{{ $message }}</div>
                             @enderror
@@ -79,7 +79,7 @@
         <div id="bottom_text">
             Don't have an account? <a href="{{ route('register') }}">Sign Up</a><br>
             <a href="{{ route('home') }}">Back to Home</a><br>
-            Remind <a href="forget_password.html">Password</a>
+            Remind <a href="{{ route('password.request') }}">Forget Password</a>
         </div>
 
     </div>

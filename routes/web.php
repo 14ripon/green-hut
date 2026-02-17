@@ -23,6 +23,7 @@ use App\Http\Controllers\PropertyController;
 use App\Http\Controllers\PropertyMediaController;
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\CategoryController;
+
 use App\Http\Controllers\Admin\ExploreSliderController;
 use App\Http\Controllers\Admin\MeetingSectionController;
 use App\Http\Controllers\Admin\SiteSettingController;
@@ -32,11 +33,10 @@ use App\Http\Controllers\Admin\CareerAdminController;
 use App\Http\Controllers\Admin\ContactAdminController;
 
 
-
-
-
 // Auth
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Auth\ForgotPasswordController;
+use App\Http\Controllers\Auth\ResetPasswordController;
 
     // Fontend
     Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -65,6 +65,11 @@ use App\Http\Controllers\AuthController;
     Route::post('/login', [AuthController::class, 'login']);
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
+    Route::get('/forgot-password', [ForgotPasswordController::class, 'showLinkRequestForm'])->middleware('guest')->name('password.request');
+    Route::post('/forgot-password', [ForgotPasswordController::class, 'sendResetLinkEmail'])->middleware('guest')->name('password.email');
+
+    Route::get('/reset-password/{token}', [ResetPasswordController::class, 'showResetForm'])->middleware('guest')->name('password.reset');
+    Route::post('/reset-password', [ResetPasswordController::class, 'reset'])->middleware('guest')->name('password.update');
 
 
 //  Dashboard
