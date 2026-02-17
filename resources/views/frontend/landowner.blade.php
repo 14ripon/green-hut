@@ -37,58 +37,59 @@
             <div class="section-heading">
                 <h2 class="text-left"><span class="heading-ani">MEET THE PROFESSIONALS</span></h2>
             </div>
-            <form>
+            <form action="{{ route('lands.store') }}" method="POST">
+            @csrf
 
                 <div class="landowner_form">
                     <div class="form-group label">
                         <h4>Land Information</h4>
                     </div>
                     <div class="form-group w_50">
-                        <input type="text" class="form-control form-control-lg" name="" placeholder="Locality">
+                        <input type="text" class="form-control form-control-lg" name="locality" placeholder="Locality">
                     </div>
                     <div class="form-group w_50">
-                        <input type="text" class="form-control form-control-lg" name="" placeholder="Address*">
+                        <input type="text" class="form-control form-control-lg" name="address" placeholder="Address*">
                     </div>
                     <div class="form-group w_50">
-                        <input type="text" name="" class="form-control form-control-lg" placeholder="Size of the land in Kathas*">
+                        <input type="number" step="0.01" name="size_in_katha" class="form-control form-control-lg" placeholder="Size in Katha">
                     </div>
                     <div class="form-group w_50">
-                        <input type="text" name="" class="form-control form-control-lg" placeholder="Width of the road in front (In Feet)*">
+                        <input type="number" name="road_width" placeholder="Road Width (Feet)" class="form-control form-control-lg">
                     </div>
                     <div class="form-group w_50">
-                        <select name="" class="form-select form-select-lg">
+                        <select name="category" class="form-select form-select-lg">
                             <option value="''"> Select Category</option>
-                            <option value="Freehold"> Freehold</option>
-                            <option value="Leasehold"> Leasehold</option>
+                            <option value="Residential">Residential</option>
+                            <option value="Commercial">Commercial</option>
                         </select>
                     </div>
                     <div class="form-group w_50">
-                        <input type="text" class="form-control form-control-lg" name="" placeholder="Facing*">
+                        <select name="facing" class="form-select form-select-lg">
+                            <option value="facing">Select Facing</option>
+                            <option value="North">North</option>
+                            <option value="South">South</option>
+                            <option value="East">East</option>
+                            <option value="West">West</option>
+                        </select>
                     </div>
                     <div class="form-group w_100">
-                        <select name="" class="form-select form-select-lg">
-                            <option value="">Attractive features (if any)</option>
-                            <option value="Lakeside">Lakeside</option>
-                            <option value="Corner Plot">Corner Plot</option>
-                            <option value="Park View">Park View</option>
-                            <option value="Main Road">Main Road</option>
-                            <option value="Others">Others</option>
-                        </select>
+                         <textarea name="attractive_features" placeholder="Attractive Features" class="form-control form-control-lg"></textarea>
                     </div>
-                </div>
-                <div class="landowner_form">
-                    <div class="form-group label">
+                    <div class="form-group label w_100">
                         <h4>Landowners Information</h4>
                     </div>
                     <div class="form-group w_50">
-                        <input type="text" name="" class="form-control form-control-lg" placeholder="Name of the landowner*">
+                        <input type="text" name="owner_name" placeholder="Owner Name" class="form-control form-control-lg">
                     </div>
                     <div class="form-group w_50">
-                        <input type="text" name="" class="form-control form-control-lg" placeholder="Contact number*">
+                        <input type="text" name="contact_number" placeholder="Contact Number" class="form-control form-control-lg">
                     </div>
                     <div class="form-group w_100">
-                        <input type="email" name="" class="form-control form-control-lg" placeholder="Email ID*">
+                        <input type="email" name="email" placeholder="Email" class="form-control form-control-lg">
                     </div>
+
+                </div>
+                <div class="landowner_form">
                     <div class="form-group w_100">
                         <button class="btn btn-bas" type="submit"><span>Submit</span></button>
                     </div>

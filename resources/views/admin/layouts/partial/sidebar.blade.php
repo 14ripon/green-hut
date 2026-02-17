@@ -79,20 +79,17 @@
             </ul>
         </li>
 
-        <li class="{{ request()->routeIs('mails.*') ? 'active' : '' }}">
+        <li class="{{ request()->routeIs('mails.*','lands.*') ? 'active' : '' }}">
             <a class="has-arrow menu-item 
-            {{ request()->routeIs('mails.*') ? 'active' : '' }}
+            {{ request()->routeIs('mails.*','lands.*') ? 'active' : '' }}
             " href="#" aria-expanded="false">
             <span class="left-icon"><i class="ti-email"></i></span>
             <span class="menu-text">Mailbox</span>
             </a>
             <ul class="dashboard-menu">
             <li><a class="{{ request()->routeIs('mails.index') ? 'active' : '' }}" href="{{ route('mails.index') }}">Contact Box</a></li>
-            <li><a class="{{ request()->routeIs('mails.*') ? '' : '' }}" href="{{ route('mails.index') }}">Professionals</a></li>
-            <li><a class="{{ request()->routeIs('mails.trash') ? 'active' : '' }}" href="{{ route('mails.trash') }}">Tresh</a></li>
-
-
-
+            <li><a class="{{ request()->routeIs('lands.index') ? 'active' : '' }}" href="{{ route('lands.index') }}">Professionals</a></li>
+            
             <li><a href="maildetails.html">Mailbox Details</a></li>
             <li><a href="compose.html">Compose</a></li>
             </ul>

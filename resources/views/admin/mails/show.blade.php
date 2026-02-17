@@ -6,10 +6,10 @@
         <div class="col-sm-8 float-right">
             <div class="inbox-toolbar btn-toolbar text-right">
                 <div class="btn-group">
-                    <a href="" class="btn btn-base"><span class="fa fa-pencil-square-o"></span></a>
+                    <a href="{{ route('mails.index') }}" class="btn btn-base"><span class="fa fa-arrow-left"></span></a>
                 </div>
                 <div class="btn-group mx-1">
-                    <a href="{{ route('mails.index') }}" class="btn btn-default"><span class="fa fa-reply"></span></a>
+                    <a href="{{ route('mails.index') }}" class="btn btn-default"><span class="fa fa-pencil-square-o"></span></a>
                     <!-- <a href="" class="btn btn-default"><span class="fa fa-reply-all"></span></a>
                     <a href="" class="btn btn-default"><span class="fa fa-share"></span></a> -->
                 </div>
@@ -45,7 +45,7 @@
                     </div>
                     <div class=" text-right">
                         <div><span class="bg-green badge"><small>OPPORTUNITIES</small></span></div>
-                        <div>Mail Time: <small>{{ \Carbon\Carbon::parse($mail->created_at)->format('D M Y') }}, {{ \Carbon\Carbon::parse($mail->created_at)->format('g:i A') }}</small></div>
+                        <div><i class="fa fa-clock-o"></i> <small>{{ \Carbon\Carbon::parse($mail->created_at)->format('D M Y') }}, {{ \Carbon\Carbon::parse($mail->created_at)->format('g:i A') }}</small></div>
                     </div>
                 </div>
                 <div class="inbox-mail-details fs-13 p-3">

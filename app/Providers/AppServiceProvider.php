@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 use App\Models\SiteSetting;
 use App\Models\Contact;
+use App\Models\Land;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -29,10 +30,12 @@ class AppServiceProvider extends ServiceProvider
 
         View::composer('*', function ($view) {
             $unreadCount = Contact::where('status', 1)->count();
+            $landUnreadCount = Land::where('status', 1)->count();
             $latestContacts = Contact::latest()->take(10)->where('status', 1)->get();
             $view->with([
                 'globalUnreadCount' => $unreadCount,
-                'latestContacts' => $latestContacts
+                'latestContacts' => $latestContacts,
+                'globalLandUnreadCount' => $landUnreadCount,
             ]);
         });
 

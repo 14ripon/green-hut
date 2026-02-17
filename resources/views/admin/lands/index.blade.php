@@ -1,6 +1,6 @@
-@extends('admin.mails.mails-layout')
+@extends('admin.lands.lands-layout')
 
-@section('title', 'Inbox')
+@section('title', 'Professionals Inbox')
 
         @section('mail-page-header')
         <div class="col-sm-8 float-right">
@@ -40,18 +40,18 @@
                             <label for="mailid_{{ $mail->id  }}"></label>
                         </div>
                     </div> -->
-                    <a href="{{ route('mails.show', $mail->id) }}" class="inbox_item {{ $mail->status == 1 ? 'unread' : '' }}">
+                    <a href="{{ route('lands.show', $mail->id) }}" class="inbox_item {{ $mail->status == 1 ? 'unread' : '' }}">
                         <div class="inbox-avatar">
                             <img src="{{ asset('admin/assets/dist/img/avatar.png') }}" alt="img">
                             <div class="inbox-avatar-text">
-                                <div class="avatar-name">{{ $mail->full_name }}</div>
+                                <div class="avatar-name">{{ $mail->locality }}</div>
                                 <div><small><span><strong>From: </strong><span> {{ $mail->email }}</span></span></small></div>
                             </div>
                             <div class="inbox-date d-none d-lg-block">
                                 <!-- <div class="date">9:27 AM</div> -->
                                  {{ $mail->created_at->diffForHumans() }}
-                                <div class="date"><i class="fa fa-clock-o"></i> {{ \Carbon\Carbon::parse($mail->created_at)->format('g:i A') }}</div>
-                                <div><small>{{ \Carbon\Carbon::parse($mail->created_at)->format('D M Y') }}</small></div>
+                                <div class="date">{{ \Carbon\Carbon::parse($mail->created_at)->format('g:i A') }}</div>
+                                <div><small>{{ \Carbon\Carbon::parse($mail->created_at)->format('d M Y') }}</small></div>
                             </div>
                         </div>
                     </a>

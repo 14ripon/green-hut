@@ -14,15 +14,39 @@
     </li>
     <li>
       <a href="#" class="dropdown-icon" data-toggle="dropdown"><i class="fas fa-bell"></i>
-        <span class="badge fadeAnim">2</span>
+        @if($globalLandUnreadCount > 0 )
+        <span class="badge fadeAnim">{{ $globalLandUnreadCount }}</span>
+        @endif
       </a>
       <div class="dropdown-menu dropdown_box notification_box">
         <div class="dropdown_box-header">
-          <h4 class="inline-block float-left"><span>2</span> new notifications</h4>
-          <a href="#" class="float-right">Clear All</a>
+          <h4 class="inline-block float-left">
+            
+            @if($globalLandUnreadCount > 0 )
+            <span>{{ $globalLandUnreadCount }}</span>
+            @endif
+            new notifications</h4>
+          <!-- <a href="#" class="float-right">Clear All</a> -->
         </div>
         <div class="dropdown_box-body">
           <ul>
+
+          @if($globalLandUnreadCount > 0 )
+            <li>
+              <a href="{{ route('lands.index') }}">
+                <div class="icon">
+                  <span><i class="far fa-envelope"></i></span>
+                </div>
+                <div class="text">
+                    <h5>{{ $globalLandUnreadCount }} mail From Landowner</h5>
+                    <span>5 minutes ago</span>
+                  </div>
+              </a>
+            </li>
+            @endif
+
+
+
             <li>
               <a href="#">
                 <div class="icon">
@@ -34,17 +58,7 @@
                   </div>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <div class="icon">
-                  <span><i class="far fa-envelope"></i></span>
-                </div>
-                <div class="text">
-                    <h5>You have received 1 email</h5>
-                    <span>5 minutes ago</span>
-                  </div>
-              </a>
-            </li>
+            
             <li>
               <a href="#">
                 <div class="icon">

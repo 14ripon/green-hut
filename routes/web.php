@@ -32,6 +32,8 @@ use App\Http\Controllers\Admin\ChairmanController;
 use App\Http\Controllers\Admin\CareerAdminController;
 use App\Http\Controllers\Admin\ContactAdminController;
 
+use App\Http\Controllers\Admin\LandController;
+
 
 // Auth
 use App\Http\Controllers\AuthController;
@@ -141,12 +143,12 @@ use App\Http\Controllers\Auth\ResetPasswordController;
     Route::get('mails-trash', [ContactAdminController::class, 'trash'])->name('mails.trash');
     Route::get('mails-restore/{id}', [ContactAdminController::class, 'restore'])->name('mails.restore');
     Route::delete('mails-force-delete/{id}', [ContactAdminController::class, 'forceDelete'])->name('mails.forceDelete');
-
     Route::post('contact-admin/bulk-delete', [ContactAdminController::class, 'bulkDelete'])->name('mails.bulkDelete');
-
-
     // View single trashed item
     Route::get('mail/trash/{id}', [ContactAdminController::class, 'showTrash'])->name('mails.trash.show');
+
+
+    Route::resource('lands', LandController::class);
 
     
 

@@ -39,7 +39,7 @@ class ContactAdminController extends Controller
 
         Contact::create($request->all());
     
-        return back()->with('success', 'Thank you for contact us, We will Reaply Soon!');
+        return back()->with('success', 'Thank you for contact us!');
     }
 
     /**
@@ -52,7 +52,7 @@ class ContactAdminController extends Controller
             $mail->status = 0;
             $mail->save();
         }
-        return view('admin.mails.mail-details', compact('mail'));
+        return view('admin.mails.show', compact('mail'));
     }
 
     /**
