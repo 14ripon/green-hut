@@ -45,15 +45,15 @@
                     </div>
                     <div class=" text-right">
                         <div><span class="bg-green badge"><small>OPPORTUNITIES</small></span></div>
-                        <div><i class="fa fa-clock-o"></i> <small>{{ \Carbon\Carbon::parse($mail->created_at)->format('D M Y') }}, {{ \Carbon\Carbon::parse($mail->created_at)->format('g:i A') }}</small></div>
+                        <div><i class="fa fa-clock-o"></i> <small>{{ \Carbon\Carbon::parse($mail->created_at)->format('d M Y') }}, {{ \Carbon\Carbon::parse($mail->created_at)->format('g:i A') }}</small></div>
                     </div>
                 </div>
                 <div class="inbox-mail-details fs-13 p-3">
-                    <h3>Meet Time: {{ \Carbon\Carbon::parse($mail->preferred_time)->format('D M Y') }}, {{ \Carbon\Carbon::parse($mail->preferred_time)->format('g:i A') }}</h3>
+                    <h3>Meet Time: {{ \Carbon\Carbon::parse($mail->preferred_time)->format('d M Y') }}, {{ \Carbon\Carbon::parse($mail->preferred_time)->format('g:i A') }}</h3>
 
 
                     <div class="mt-3 border p-3">
-                        <p class="pb-3 fs-13">click here to <a href="#">Reply</a> or <a href="compose.html">Forward</a></p>
+                        <p class="pb-3 fs-13"><a href="{{ route('messages.reply', $mail->id) }}">Click to Reply</a></p>
                     </div> 
                 </div>
             </div>

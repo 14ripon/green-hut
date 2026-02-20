@@ -33,6 +33,7 @@ use App\Http\Controllers\Admin\CareerAdminController;
 use App\Http\Controllers\Admin\ContactAdminController;
 
 use App\Http\Controllers\Admin\LandController;
+use App\Http\Controllers\Admin\MessageController;
 
 
 // Auth
@@ -148,7 +149,11 @@ use App\Http\Controllers\Auth\ResetPasswordController;
     Route::get('mail/trash/{id}', [ContactAdminController::class, 'showTrash'])->name('mails.trash.show');
 
 
+    Route::get('messages/{message}/reply', [MessageController::class, 'reply'])->name('messages.reply');
+    Route::post('messages/{message}/send-reply', [MessageController::class, 'sendReply'])->name('messages.sendReply');
+
     Route::resource('lands', LandController::class);
+
 
     
 
@@ -157,3 +162,6 @@ use App\Http\Controllers\Auth\ResetPasswordController;
 
 
     });//dashbord
+
+
+    Route::view('test', 'emails.contact-reply');
