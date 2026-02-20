@@ -6,6 +6,14 @@ use App\Http\Controllers\Controller;
 use App\Models\Land;
 use Illuminate\Http\Request;
 
+
+use Illuminate\Support\Facades\Mail;
+use App\Mail\LandReplyMail;
+
+
+
+
+
 class LandController extends Controller
 {
     /**
@@ -44,8 +52,8 @@ class LandController extends Controller
 
         Land::create($request->all());
 
-        return redirect()->route('lands.index')
-            ->with('success', 'Land created successfully.');
+        return redirect()->route('landowner')
+            ->with('success', 'Send successfully.');
     }
 
     /**
@@ -88,4 +96,40 @@ class LandController extends Controller
         return redirect()->route('lands.index')
                         ->with('success', 'Land deleted successfully.');
     }
+
+
+
+
+    // Reply Page
+    public function reply(Land $land)
+    {
+        return view('admin.lands.reply', compact('land'));
+    }
+
+    // Send reply
+    public function sendReply(Request $request, Land $land)
+    {
+        $request->validate([
+            'subject' => 'required|string',
+            'message' => 'required|string',
+        ]);
+
+        Mail::to($land->email)->send(
+            new LandReplyMail($request->subject, $request->message, $land)
+        );
+
+        return redirect()->route('lands.show', $land->id)
+            ->with('success', 'Reply email sent successfully.');
+    }
+
+
+
+
+
+
+
+
+
+
+
 }

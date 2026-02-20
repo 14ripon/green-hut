@@ -78,7 +78,7 @@
                                                     </tr>
                                                 </table>
                                                 <div class="form-group">
-                                                    <textarea name="reply_message" placeholder="Our team looks forward to discussing your real estate requirements and providing the best possible solutions." class="form-control">Our team looks forward to discussing your real estate requirements and providing the best possible solutions.</textarea>
+                                                    <textarea selected name="reply_message" placeholder="Our team looks forward to discussing your real estate requirements and providing the best possible solutions." class="form-control">Our team looks forward to discussing your real estate requirements and providing the best possible solutions.</textarea>
                                                 </div>
 
                                                 <p>If you need to reschedule, please contact us at least 24 hours in advance.</p>

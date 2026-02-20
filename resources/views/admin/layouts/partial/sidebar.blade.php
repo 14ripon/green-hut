@@ -79,19 +79,16 @@
             </ul>
         </li>
 
-        <li class="{{ request()->routeIs('mails.*','lands.*') ? 'active' : '' }}">
+        <li class="{{ request()->routeIs('mails.*','lands.*','messages.*') ? 'active' : '' }}">
             <a class="has-arrow menu-item 
-            {{ request()->routeIs('mails.*','lands.*') ? 'active' : '' }}
+            {{ request()->routeIs('mails.*','lands.*','messages.*') ? 'active' : '' }}
             " href="#" aria-expanded="false">
             <span class="left-icon"><i class="ti-email"></i></span>
             <span class="menu-text">Mailbox</span>
             </a>
             <ul class="dashboard-menu">
-            <li><a class="{{ request()->routeIs('mails.index') ? 'active' : '' }}" href="{{ route('mails.index') }}">Contact Box</a></li>
-            <li><a class="{{ request()->routeIs('lands.index') ? 'active' : '' }}" href="{{ route('lands.index') }}">Professionals</a></li>
-            
-            <li><a href="maildetails.html">Mailbox Details</a></li>
-            <li><a href="compose.html">Compose</a></li>
+                <li><a class="{{ request()->routeIs('mails.index','mails.show','messages.*') ? 'active' : '' }}" href="{{ route('mails.index') }}">Contact Box</a></li>
+                <li><a class="{{ request()->routeIs('lands.*') ? 'active' : '' }}" href="{{ route('lands.index') }}">Professionals</a></li>
             </ul>
         </li>
 

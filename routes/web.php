@@ -153,8 +153,10 @@ use App\Http\Controllers\Auth\ResetPasswordController;
     Route::post('messages/{message}/send-reply', [MessageController::class, 'sendReply'])->name('messages.sendReply');
 
     Route::resource('lands', LandController::class);
+    
 
-
+    Route::get('land/{land}/reply', [LandController::class, 'reply'])->name('lands.reply');
+    Route::post('land/{land}/reply', [LandController::class, 'sendReply'])->name('lands.sendReply');
     
 
     
@@ -164,4 +166,4 @@ use App\Http\Controllers\Auth\ResetPasswordController;
     });//dashbord
 
 
-    Route::view('test', 'emails.contact-reply');
+    Route::view('test', 'emails.land-reply');

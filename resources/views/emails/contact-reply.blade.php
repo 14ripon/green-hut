@@ -68,7 +68,7 @@
                 <tr>
                     <td style="background:#f1f1f1; padding:20px; text-align:center; font-size:13px; color:#666666;">
                         <p style="margin:5px 0;">
-                            📞 +8801754720343 | ✉ zhripon97@gmail.com
+                            📞 {{ $siteSettings->phone ?? '01754720343' }} | ✉ {{ $siteSettings->email ?? 'zhripon97@gmail.com' }}
                         </p>
                         <p style="margin:5px 0;">
                             © {{ date('Y') }} Green Hut Real Estate. All Rights Reserved.

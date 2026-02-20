@@ -41,7 +41,7 @@
                         <div class="avatar-name"><strong>From: </strong>
                             {{ $mail->full_name }} - <em>{{ $mail->email }}</em>
                         </div>
-                        <div><small><strong>Mobile: </strong> <a href="tel:{{ $mail->phone }}">{{ $mail->phone }}</a></small></div>
+                        <div><small><strong>Mobile: </strong> <a href="tel:{{ $mail->contact_number }}">{{ $mail->contact_number }}</a></small></div>
                     </div>
                     <div class=" text-right">
                         <div><span class="bg-green badge"><small>OPPORTUNITIES</small></span></div>
@@ -96,7 +96,7 @@
                     </table>
 
                     <div class="mt-3 border p-3">
-                        <p class="pb-3 fs-13">click here to <a href="#">Reply</a> or <a href="compose.html">Forward</a></p>
+                        <p class="pb-3 fs-13"><a href="{{ route('lands.reply', $mail->id) }}">Click to Reply</a></p>
                     </div> 
                 </div>
             </div>
