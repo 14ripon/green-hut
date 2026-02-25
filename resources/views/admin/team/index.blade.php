@@ -71,14 +71,18 @@
                                 </td>
                                 <td>
                                     <a class="btn btn-base" data-toggle="tooltip" data-placement="left" title="" data-original-title="Update" href="{{ route('teams.edit', $team->id) }}" class="btn btn-dark"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-
-
-                                    <form class="d-inline" action="{{ route('teams.destroy', $team->id) }}" method="POST">
+                                    <!-- Sweet Alert Delete Code -->
+                                   <button  data-toggle="tooltip" data-placement="right" title="" data-original-title="Delete "
+                                        class="btn btn-danger deleteBtn"
+                                        data-id="{{ $team->id }}">
+                                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    </button>
+                                    <form id="delete-form-{{ $team->id }}" 
+                                        action="{{ route('teams.destroy', $team->id) }}" 
+                                        method="POST" 
+                                        style="display:none;">
                                         @csrf
                                         @method('DELETE')
-                                        <button data-toggle="tooltip" data-original-title="Delete" class="btn btn-danger" type="submit" onclick="return confirm('Are you sure?')">
-                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
-                                        </button>
                                     </form>
                                 </td>
                             </tr>

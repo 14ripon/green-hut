@@ -70,21 +70,26 @@
                                 </td>
                                 <td>
                                     <a class="btn btn-base" data-toggle="tooltip" data-placement="left" title="" data-original-title="Update" href="{{ route('admin.hero-sliders.edit', $slider->id) }}" class="btn btn-dark"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                    <form class="d-inline" action="{{ route('admin.hero-sliders.delete', $slider->id) }}"
-                                          method="POST"
-                                          onsubmit="return confirm('Are you sure?')">
+                                    <button  data-toggle="tooltip" data-placement="right" title="" data-original-title="Delete "
+                                        class="btn btn-danger deleteBtn"
+                                        data-id="{{ $slider->id }}">
+                                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    </button>
+
+                                    <form id="delete-form-{{ $slider->id }}" 
+                                        action="{{ route('admin.hero-sliders.delete', $slider->id) }}" 
+                                        method="POST" 
+                                        style="display:none;">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="btn btn-danger" data-toggle="tooltip" data-placement="right" title="" data-original-title="Delete "><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                                     </form>
-
+                                
                                 </td>
                             </tr>
                             @endforeach
                             <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-1">Add New Item</button>
-
+                            
                             <div class="md-modal box-shadow md-effect-1" id="modal-1">
-                                <button class="btn btn-danger md-close"><i class="hvr-buzz-out fa fa-close"></i></button>
                                 <div class="md-content">
                                     <h3>Add Slider Image</h3>
                                     <div class="n-modal-body">
@@ -120,6 +125,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="md-overlay"></div>
                             </tbody>
                         </table>
                     </div>
@@ -165,4 +171,6 @@
             });
         });
     </script>
+
+
 @endpush

@@ -3,13 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-
-class Page extends Model
+class FeatureAmenity extends Model
 {
+
     protected $fillable = [
-        'page_name',
-        'title',
-        'content',
+        'name',
+        'icon',
         'status',
     ];
 }

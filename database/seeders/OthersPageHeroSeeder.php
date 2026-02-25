@@ -8,11 +8,15 @@ use App\Models\OthersPageHero;
 
 class OthersPageHeroSeeder extends Seeder
 {
+
+
     /**
      * Run the database seeds.
      */
+    
     public function run(): void
     {
+        OthersPageHero::truncate();
         $data = [
             [
                 'page_name' => 'our-team',
@@ -68,6 +72,55 @@ class OthersPageHeroSeeder extends Seeder
                 'sub_title'  => 'Manage, List, and Grow the Value of Your Property',
                 'status'    => 1,
             ],
+            [
+                'page_name' => 'Projects',
+                'title'     => 'Crafting Your Dream Home',
+                'sub_title'  => 'Premium Projects',
+                'status'    => 1,
+            ],
+            [
+                'page_name' => 'Ongoing',
+                'title'     => 'Ongoing',
+                'sub_title'  => 'Crafting Your Dream Home',
+                'status'    => 1,
+            ],
+            [
+                'page_name' => 'Condominium',
+                'title'     => 'Condominium',
+                'sub_title'  => 'Crafting Your Dream Home',
+                'status'    => 1,
+            ],
+            [
+                'page_name' => 'Commercial',
+                'title'     => 'Commercial',
+                'sub_title'  => 'Crafting Your Dream Home',
+                'status'    => 1,
+            ],
+            [
+                'page_name' => 'Residential',
+                'title'     => 'Residential',
+                'sub_title'  => 'Crafting Your Dream Home',
+                'status'    => 1,
+            ],
+            [
+                'page_name' => 'Upcoming',
+                'title'     => 'Upcoming',
+                'sub_title'  => 'Crafting Your Dream Home',
+                'status'    => 1,
+            ],
+            [
+                'page_name' => 'Completed',
+                'title'     => 'Completed',
+                'sub_title'  => 'Crafting Your Dream Home',
+                'status'    => 1,
+            ],
+            [
+                'page_name' => 'Terms And Condition',
+                'title'     => 'Terms And Condition',
+                'sub_title'  => 'The technology of tomorrow.',
+                'status'    => 1,
+            ],
+
         ];
 
         foreach ($data as $item) {

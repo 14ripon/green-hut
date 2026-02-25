@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\ChairmanMessages;
 use App\Models\OthersPageHero;
 use App\Models\Team;
+use App\Models\Page;
 use Illuminate\Http\Request;
 
 class AboutController extends Controller
@@ -22,8 +23,27 @@ class AboutController extends Controller
     // Privacy Policy Page
     public function privacyPolicy(){
         $otherspagehero = OthersPageHero::where('id', 2)->where('status', 1)->first();
-        return view('frontend.about.privacy-policy', compact('otherspagehero'));
+        $privacyPolicy = Page::where('id', 2)->where('status', 1)->first();
+        return view('frontend.about.privacy-policy', compact('otherspagehero','privacyPolicy'));
     }
+
+
+
+    // Terms & Condition Page
+    public function termsNConditions(){
+        $otherspagehero = OthersPageHero::where('id', 17)->where('status', 1)->first();
+        $termsNConditions = Page::where('id', 1)->where('status', 1)->first();
+        return view('frontend.about.terms-conditions', compact('otherspagehero','termsNConditions'));
+    }
+
+
+
+
+
+
+    
+
+
 
     // Chairmans Message
     public function chairmansMessage(){

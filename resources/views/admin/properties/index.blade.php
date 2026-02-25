@@ -83,17 +83,20 @@
                                             Manage Images
                                         </a>
                                         <a class="btn btn-base" data-toggle="tooltip" data-placement="left" title="" data-original-title="Update" href="{{ route('properties.edit', $property->id) }}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-
-                                        <form action="{{ route('properties.destroy', $property->id) }}"
-                                              method="POST"
-                                              style="display:inline;">
+                                        <!-- Sweet Alert Delete Code -->
+                                        <button  data-toggle="tooltip" data-placement="right" title="" data-original-title="Delete "
+                                            class="btn btn-danger deleteBtn"
+                                            data-id="{{ $property->id }}">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        </button>
+                                        <form id="delete-form-{{ $property->id }}" 
+                                            action="{{ route('properties.destroy', $property->id) }}" 
+                                            method="POST" 
+                                            style="display:none;">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="btn btn-danger" data-toggle="tooltip" data-placement="right" title="" data-original-title="Delete" type="submit"
-                                                    onclick="return confirm('Are you sure?')">
-                                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                                            </button>
                                         </form>
+                                        
                                     </td>
                                 </tr>
                             @empty

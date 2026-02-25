@@ -34,16 +34,27 @@
                     <div class="dropdown"></div>
                 </div>
                 <div class="card-block p-3 basic-forms">
-                    <form action="{{ route('categories.store') }}" method="POST">
+                   
+                    <form action="{{ route('features-amenities.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <label>Category Name</label>
-                                <input class="form-control" type="text" name="name" value="{{ old('name') }}" required>
-                            </div>
-                        </div>
 
-                        <button class="btn btn-base" type="submit">Save</button>
+                        <div class="form-group">
+                            <label>Feature & Amenity Name</label>
+                            <input class="form-control" type="text" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label>Icon</label>
+                            <input class="form-control" type="file" name="icon">
+                        </div>
+                        <div class="form-group col-md-6 pl-0 checkbox checkbox-primary">
+                            <input type="hidden" name="status" value="0" >
+                            <input id="checkbox2" type="checkbox" name="status" value="1" >
+                            <label for="checkbox2">Publish</label>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-base" type="submit">Save</button>
+                        </div>
+                        
                     </form>
                 </div>
             </div>

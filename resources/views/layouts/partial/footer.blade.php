@@ -35,8 +35,8 @@
                 </div>
             </div>
             <div class="others-links">
-                <a href="terms-conditions.html">Terms &amp; Conditions</a>
-                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="{{ route('terms-and-conditions') }}">Terms &amp; Conditions</a>
+                <a href="{{ route('privacy-policy') }}">Privacy Policy</a>
                 <a href="about.html">About Us</a>
                 <a href="contact.html">Contact Us</a>
             </div>

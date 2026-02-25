@@ -8,7 +8,8 @@ use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\LandownerController;
 use App\Http\Controllers\Frontend\CareerController;
-use App\Http\Controllers\Frontend\PropertyDetailsController;
+use App\Http\Controllers\Frontend\PropertyPageController;
+use App\Http\Controllers\Frontend\OurstoryController;
 
 // Dashboard
 use App\Http\Controllers\Admin\AdminController;
@@ -29,11 +30,14 @@ use App\Http\Controllers\Admin\MeetingSectionController;
 use App\Http\Controllers\Admin\SiteSettingController;
 use App\Http\Controllers\Admin\OfficeContactController;
 use App\Http\Controllers\Admin\ChairmanController;
+use App\Http\Controllers\Admin\PrivacyPolicyController;
+use App\Http\Controllers\Admin\TermsNConditionsController;
 use App\Http\Controllers\Admin\CareerAdminController;
 use App\Http\Controllers\Admin\ContactAdminController;
 
 use App\Http\Controllers\Admin\LandController;
 use App\Http\Controllers\Admin\MessageController;
+use App\Http\Controllers\Admin\FeatureAmenityController;
 
 
 // Auth
@@ -44,20 +48,28 @@ use App\Http\Controllers\Auth\ResetPasswordController;
     // Fontend
     Route::get('/', [HomeController::class, 'index'])->name('home');
 
-    //About Route
+    // About Route
     Route::get('/our-team', [AboutController::class, 'ourTeam'])->name('our-team');
     Route::get('/privacy-policy', [AboutController::class, 'privacyPolicy'])->name('privacy-policy');
+    Route::get('/terms-and-conditions', [AboutController::class, 'termsNConditions'])->name('terms-and-conditions');
+
     Route::get('/chairmans-message', [AboutController::class, 'chairmansMessage'])->name('chairmans-message');
 
     Route::get('/career', [CareerController::class, 'career'])->name('career');
     Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
     Route::get('/landowner', [LandownerController::class, 'landowner'])->name('landowner');
 
-    //Blog
+    // Blog
     Route::get('/blog', [BlogController::class, 'blog'])->name('blog');
 
     // Property
-    Route::get('/property/{property}', [PropertyDetailsController::class, 'show'])->name('property.show');
+    Route::get('/property/{property}', [PropertyPageController::class, 'show'])->name('property.show');
+    Route::get('/property/category/{status}', [PropertyPageController::class, 'categorywiseview'])->name('project.category');
+
+    // Our Story
+    Route::get('/our-story', [OurstoryController::class, 'ourstory'])->name('ourstory');
+
+
 
 
     // Auth
@@ -75,7 +87,7 @@ use App\Http\Controllers\Auth\ResetPasswordController;
     Route::post('/reset-password', [ResetPasswordController::class, 'reset'])->middleware('guest')->name('password.update');
 
 
-//  Dashboard
+    //  Dashboard
     Route::middleware('auth')->group(function(){
 
     Route::get('/dashboard', [AdminController::class, 'admin'])->name('dashboard');
@@ -83,7 +95,7 @@ use App\Http\Controllers\Auth\ResetPasswordController;
 
 
 
-//  home slider backend
+    //  home slider backend
     Route::get('/hero-slider-index', [HeroSliderController::class, 'index'])->name('slider-index');
     Route::post('/hero-slider-index', [HeroSliderController::class, 'store'])->name('slider.store');
     Route::get('admin/hero-sliders/{id}/edit', [HeroSliderController::class, 'edit'])->name('admin.hero-sliders.edit');
@@ -108,6 +120,24 @@ use App\Http\Controllers\Auth\ResetPasswordController;
     //status update toggle
     Route::post('/teams/toggle-status', [TeamController::class, 'toggleStatus'])->name('teams.toggle.status');
     Route::resource('chairman', ChairmanController::class);
+
+    Route::resource('admin-privacy', PrivacyPolicyController::class);
+    Route::resource('admin-terms', TermsNConditionsController::class);
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     //Testimonial
@@ -153,10 +183,10 @@ use App\Http\Controllers\Auth\ResetPasswordController;
     Route::post('messages/{message}/send-reply', [MessageController::class, 'sendReply'])->name('messages.sendReply');
 
     Route::resource('lands', LandController::class);
-    
-
     Route::get('land/{land}/reply', [LandController::class, 'reply'])->name('lands.reply');
     Route::post('land/{land}/reply', [LandController::class, 'sendReply'])->name('lands.sendReply');
+
+    Route::resource('features-amenities', FeatureAmenityController::class);
     
 
     
@@ -166,4 +196,4 @@ use App\Http\Controllers\Auth\ResetPasswordController;
     });//dashbord
 
 
-    Route::view('test', 'emails.land-reply');
+    Route::view('test', 'admin/modal');

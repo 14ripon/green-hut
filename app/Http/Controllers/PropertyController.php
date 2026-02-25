@@ -38,6 +38,14 @@ class PropertyController extends Controller
         $request->validate([
             'title' => 'required',
             'location_id' => 'required',
+            'land_area' => 'required',
+            'no_of_floors' => 'required',
+            'apartment_per_floor' => 'required',
+            'apartment_size' => 'required',
+            'bedrooms' => 'required',
+            'bathrooms' => 'required',
+            'launch_date_note' => 'required',
+            'collection' => 'required',
             'categories' => 'required|array',
         ]);
 

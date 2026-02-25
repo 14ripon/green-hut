@@ -27,21 +27,22 @@
                             </li>
                             <li class="dropdown_menu"><a href="#">Projects <i class="fa-solid fa-caret-down"></i></a>
                                 <ul>
-                                    <li class="sub-dropdown-parent"><a href="#">Ongoing</a>
-                                        <ul class="sub-dropdown-menu">
+                                    <li class="sub-dropdown-parent">
+                                        <a href="{{ Route('project.category',3)}}">Ongoing</a>
+                                        <!-- <ul class="sub-dropdown-menu">
                                             <li><a href="project-details.html">Condominium</a></li>
                                             <li><a href="#">Commercial</a></li>
                                             <li><a href="#">Residential</a></li>
-                                        </ul>
+                                        </ul> -->
                                     </li>
-                                    <li><a href="project-details.html">Upcoming</a></li>
-                                    <li><a href="project-details.html">Completed</a></li>
+                                    <li><a href="{{ Route('project.category',2)}}">Upcoming</a></li>
+                                    <li><a href="{{ Route('project.category',4)}}">Completed</a></li>
                                 </ul>
                             </li>
                             <li><a href="{{ route('blog') }}">Blog</a></li>
                             <li class="dropdown_menu"><a href="#">Gallery <i class="fa-solid fa-caret-down"></i></a>
                                 <ul>
-                                    <li><a href="#">Newsletter</a></li>
+                                    <li><a href="{{ route('ourstory') }}">Our Story</a></li>
                                     <li><a href="image-gallery.html">Image Gallery</a></li>
                                     <li><a href="video-gallery.html">Video Gallery</a></li>
                                 </ul>

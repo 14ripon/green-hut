@@ -82,13 +82,18 @@
                                     </td>
                                     <td>
                                         <a class="btn btn-base" data-toggle="tooltip" data-placement="left" title="" data-original-title="Update" href="{{ route('testimonials.edit', $testimonial->id) }}" class="btn btn-dark"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                        <form action="{{ route('testimonials.destroy', $testimonial->id) }}" method="POST"
-                                              onsubmit="return confirm('Are you sure?')" style="display:inline">
+                                        <!-- Sweet Alert Delete Code -->
+                                        <button  data-toggle="tooltip" data-placement="right" title="" data-original-title="Delete "
+                                            class="btn btn-danger deleteBtn"
+                                            data-id="{{ $testimonial->id }}">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        </button>
+                                        <form id="delete-form-{{ $testimonial->id }}" 
+                                            action="{{ route('testimonials.destroy', $testimonial->id) }}" 
+                                            method="POST" 
+                                            style="display:none;">
                                             @csrf
                                             @method('DELETE')
-                                            <button class="btn btn-danger" data-original-title="Delete" title="" type="submit" >
-                                                <i class="fa fa-trash-o" aria-hidden="true"></i>
-                                            </button>
                                         </form>
 
                                     </td>

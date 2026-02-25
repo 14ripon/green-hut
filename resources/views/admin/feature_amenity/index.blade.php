@@ -1,6 +1,9 @@
 @extends('admin.layouts.app')
 
-@section('title', 'Home - Admin')
+@section('title', 'Projects - Feature & Amenity')
+@push('css')
+    
+@endpush
 
 @section('content')
     <div class="content-wrapper px-4">
@@ -11,7 +14,7 @@
                     <i class="pe-7s-note2"></i>
                 </div>
                 <div class="header-title">
-                    <h1>Basic Form</h1>
+                    <h1>Features & Amenities</h1>
                     <small class="">A simple and user-friendly Basic form</small>
                     <ul class="breadcrumb">
                         <li><a class="pr-2" href=""><i class="pe-7s-home"></i> Home</a>/</li>
@@ -37,32 +40,37 @@
                             <thead>
                             <tr>
                                 <th>SL</th>
-                                <th>Name</th>
-                                <th>Slug</th>
+                                <th>Feature & Amenity</th>
+                                <th>icon</th>
+                                <th>Status</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach ($categories as $category)
+                            @foreach ($items as $item)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $category->name }}</td>
-                                    <td>{{ $category->slug }}</td>
+                                    <td>{{ $item->name }}</td>
+                                    <td style="width:200px;">
+                                        <img class="img-thumbnail" src="{{ asset('storage/'.$item->icon) }}" alt="">
+                                    </td>
+                                    <td>{{ $item->status }}</td>
                                     <td>
-                                        <a class="btn btn-base" data-toggle="tooltip" data-placement="left" title="" data-original-title="Update" href="{{ route('categories.edit',$category->id) }}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                        <!-- Sweet Alert Delete Code -->
+                                        <a class="btn btn-base" data-toggle="tooltip" data-placement="left" title="" data-original-title="Update" href="{{ route('features-amenities.edit',$item->id) }}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
                                         <button  data-toggle="tooltip" data-placement="right" title="" data-original-title="Delete "
                                             class="btn btn-danger deleteBtn"
-                                            data-id="{{ $category->id }}">
+                                            data-id="{{ $item->id }}">
                                             <i class="fa fa-trash-o" aria-hidden="true"></i>
                                         </button>
-                                        <form id="delete-form-{{ $category->id }}" 
-                                            action="{{ route('categories.destroy', $category->id) }}" 
+
+                                        <form id="delete-form-{{ $item->id }}" 
+                                            action="{{ route('features-amenities.destroy', $item->id) }}" 
                                             method="POST" 
                                             style="display:none;">
                                             @csrf
                                             @method('DELETE')
                                         </form>
+                                        
                                     </td>
                                 </tr>
                             @endforeach
@@ -73,24 +81,35 @@
                     </div>
                     <div class="md-modal md-effect-1" id="modal-1">
                         <div class="md-content">
-                            <h3>Add New Category</h3>
+                            <h3>Add New Feature & Amenity</h3>
                             <div class="n-modal-body">
-                                <form action="{{ route('categories.store') }}" method="POST">
+                                <form action="{{ route('features-amenities.store') }}" method="POST" enctype="multipart/form-data">
                                     @csrf
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <label>Category Name</label>
-                                            <input class="form-control" type="text" name="name" value="{{ old('name') }}" required>
-                                        </div>
-                                    </div>
 
-                                    <button class="btn btn-base" type="submit">Save</button>
+                                    <div class="form-group">
+                                        <label>Feature & Amenity Name</label>
+                                        <input class="form-control" type="text" name="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Icon</label>
+                                        <input class="form-control" type="file" name="icon">
+                                    </div>
+                                    <div class="form-group col-md-6 pl-0 checkbox checkbox-primary">
+                                        <input type="hidden" name="status" value="0" >
+                                        <input id="checkbox2" type="checkbox" name="status" value="1" >
+                                        <label for="checkbox2">Publish</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-base" type="submit">Save</button>
+                                    </div>
+                                    
                                 </form>
                             </div>
                         </div>
                     </div>
                     <div class="md-overlay"></div>
-                    <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-1">Add New Category</button>
+                    <button class="btn btn-base md-trigger mb-2 mr-1" data-modal="modal-1">Add New Feature & Amenity</button>
+                    
                 </div>
             </div>
 
@@ -99,3 +118,8 @@
     </div><!-- /content-wrapper -->
 
 @endsection
+
+@push('js')
+    
+    
+@endpush

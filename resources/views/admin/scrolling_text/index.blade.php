@@ -58,9 +58,18 @@
                                 </td>
                                 <td>
                                     <a class="btn btn-base" data-toggle="tooltip" data-placement="left" title="" data-original-title="Update" href="{{ route('scrolling-text.edit',$text->id) }}" class="btn btn-dark"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                    <form action="{{ route('scrolling-text.destroy',$text->id) }}" method="POST" style="display:inline">
-                                        @csrf @method('DELETE')
-                                        <button class="btn btn-danger" data-toggle="tooltip" onclick="return" data-original-title="Delete " confirm('Delete?')"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                    <button  data-toggle="tooltip" data-placement="right" title="" data-original-title="Delete "
+                                        class="btn btn-danger deleteBtn"
+                                        data-id="{{ $text->id }}">
+                                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                    </button>
+
+                                    <form id="delete-form-{{ $text->id }}" 
+                                        action="{{ route('scrolling-text.destroy', $text->id) }}" 
+                                        method="POST" 
+                                        style="display:none;">
+                                        @csrf
+                                        @method('DELETE')
                                     </form>
                                 </td>
                             </tr>

@@ -11,7 +11,7 @@
                     <i class="pe-7s-note2"></i>
                 </div>
                 <div class="header-title">
-                    <h1>Basic Form</h1>
+                    <h1>Explore Slider</h1>
                     <small class="">A simple and user-friendly Basic form</small>
                     <ul class="breadcrumb">
                         <li><a class="pr-2" href=""><i class="pe-7s-home"></i> Home</a>/</li>
@@ -65,11 +65,18 @@
                                     </td>
                                     <td>
                                         <a class="btn btn-base" data-toggle="tooltip" data-placement="left" title="" data-original-title="Update" href="{{ route('explore-sliders.edit', $slider->id) }}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-
-                                        <form class="d-inline" method="POST"
-                                              action="{{ route('explore-sliders.destroy', $slider->id) }}">
-                                            @csrf @method('DELETE')
-                                            <button type="submit" class="btn btn-danger" data-toggle="tooltip" data-placement="right" title="" data-original-title="Delete"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                        <!-- Sweet Alert Delete Code -->
+                                        <button  data-toggle="tooltip" data-placement="right" title="" data-original-title="Delete "
+                                            class="btn btn-danger deleteBtn"
+                                            data-id="{{ $slider->id }}">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        </button>
+                                        <form id="delete-form-{{ $slider->id }}" 
+                                            action="{{ route('explore-sliders.destroy', $slider->id) }}" 
+                                            method="POST" 
+                                            style="display:none;">
+                                            @csrf
+                                            @method('DELETE')
                                         </form>
                                     </td>
                                 </tr>

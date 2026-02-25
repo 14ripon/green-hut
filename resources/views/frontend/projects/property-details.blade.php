@@ -155,43 +155,43 @@
             </div>
             <div class="features-cards">
                 <div class="feature-card">
-                    <img src="assets/images/project-details/features-amenities/1.svg" alt="icon">
+                    <img src="{{ asset('frontend/images/project-details/features-amenities/1.svg') }}" alt="icon">
                     <h3>Infinity Pool & Lounge Deck</h3>
                 </div>
                 <div class="feature-card">
-                    <img src="assets/images/project-details/features-amenities/2.svg" alt="icon">
+                    <img src="{{ asset('frontend/images/project-details/features-amenities/2.svg') }}" alt="icon">
                     <h3>Modern Fitness Center</h3>
                 </div>
                 <div class="feature-card">
-                    <img src="assets/images/project-details/features-amenities/3.svg" alt="icon">
+                    <img src="{{ asset('frontend/images/project-details/features-amenities/3.svg') }}" alt="icon">
                     <h3>Landscaped Garden & Green Spaces</h3>
                 </div>
                 <div class="feature-card">
-                    <img src="assets/images/project-details/features-amenities/4.svg" alt="icon">
+                    <img src="{{ asset('frontend/images/project-details/features-amenities/4.svg') }}" alt="icon">
                     <h3>Secure Parking Area</h3>
                 </div>
                 <div class="feature-card">
-                    <img src="assets/images/project-details/features-amenities/5.svg" alt="icon">
+                    <img src="{{ asset('frontend/images/project-details/features-amenities/5.svg') }}" alt="icon">
                     <h3>24/7 Security & CCTV Surveillance</h3>
                 </div>
                 <div class="feature-card">
-                    <img src="assets/images/project-details/features-amenities/6.svg" alt="icon">
+                    <img src="{{ asset('frontend/images/project-details/features-amenities/6.svg') }}" alt="icon">
                     <h3>Spacious Living Interiors</h3>
                 </div>
                 <div class="feature-card">
-                    <img src="assets/images/project-details/features-amenities/7.svg" alt="icon">
+                    <img src="{{ asset('frontend/images/project-details/features-amenities/7.svg') }}" alt="icon">
                     <h3>Rooftop Terrace & BBQ Zone</h3>
                 </div>
                 <div class="feature-card">
-                    <img src="assets/images/project-details/features-amenities/8.svg" alt="icon">
+                    <img src="{{ asset('frontend/images/project-details/features-amenities/8.svg') }}" alt="icon">
                     <h3>Smart Home Automation</h3>
                 </div>
                 <div class="feature-card">
-                    <img src="assets/images/project-details/features-amenities/9.svg" alt="icon">
+                    <img src="{{ asset('frontend/images/project-details/features-amenities/9.svg') }}" alt="icon">
                     <h3>Children’s Play Area</h3>
                 </div>
                 <div class="feature-card">
-                    <img src="assets/images/project-details/features-amenities/10.svg" alt="icon">
+                    <img src="{{ asset('frontend/images/project-details/features-amenities/10.svg') }}" alt="icon">
                     <h3>Community Hall & Event Space</h3>
                 </div>
             </div>

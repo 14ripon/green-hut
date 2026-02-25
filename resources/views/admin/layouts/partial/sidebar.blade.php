@@ -36,9 +36,9 @@
         </li>
 
 
-        <li class="{{ request()->routeIs('teams.*','chairman.*') ? 'active' : '' }}">
+        <li class="{{ request()->routeIs('teams.*','chairman.*','admin-privacy.edit','admin-terms.edit') ? 'active' : '' }}">
             <a class="has-arrow menu-item
-            {{ request()->routeIs('teams.*','chairman.*') ? 'active' : '' }}
+            {{ request()->routeIs('teams.*','chairman.*','admin-privacy.edit','admin-terms.edit') ? 'active' : '' }}
             " href="#" aria-expanded="false">
                 <span class="left-icon"><i class="ti-credit-card"></i></span>
                 <span class="menu-text">About Page</span>
@@ -46,8 +46,22 @@
             <ul class="submenu-angle dashboard-menu" aria-expanded="false">
                 <li><a class="{{ request()->routeIs('teams.*') ? 'active' : '' }}" href="{{ route('teams.index') }}" >Team Page</a></li>
                 <li><a class="{{ request()->routeIs('chairman.*') ? 'active' : '' }}" href="{{ route('chairman.index') }}" >Chairman's Message</a></li>
-                <li><a class="" href="" >Terms & Conditions</a></li>
-                <li><a class="" href="" >Privacy Policy</a></li>
+                <li><a class="{{ request()->routeIs('admin-terms.edit') ? 'active' : '' }}" href="{{ route('admin-terms.edit',1) }}" >Terms & Conditions</a></li>
+                <li><a class="{{ request()->routeIs('admin-privacy.edit') ? 'active' : '' }}" href="{{ route('admin-privacy.edit',2) }}" >Privacy Policy</a></li>
+            </ul>
+        </li>
+
+        <li class="{{ request()->routeIs('features-amenities.*') ? 'active' : '' }}">
+            <a class="has-arrow menu-item
+            {{ request()->routeIs('features-amenities.*') ? 'active' : '' }}
+            " href="#" aria-expanded="false">
+                <span class="left-icon"><i class="ti-credit-card"></i></span>
+                <span class="menu-text">Projects</span>
+            </a>
+            <ul class="submenu-angle dashboard-menu" aria-expanded="false">
+                <li><a class="{{ request()->routeIs('features-amenities.index') ? 'active' : '' }}" href="{{ route('features-amenities.index') }}" >Features & Amenities</a></li>
+                <li><a class="" href="" >Menu</a></li>
+                
             </ul>
         </li>
 
@@ -64,20 +78,6 @@
             </a>
         </li>
 
-        <li >
-            <a class="has-arrow menu-item
-            
-            " href="#" aria-expanded="false">
-                <span class="left-icon"><i class="ti-credit-card"></i></span>
-                <span class="menu-text">About Page</span>
-            </a>
-            <ul class="submenu-angle dashboard-menu" aria-expanded="false">
-                <li><a class="{{ request()->routeIs('teams.*') ? 'active' : '' }}" href="{{ route('teams.index') }}" >Team Page</a></li>
-                <li><a class="{{ request()->routeIs('chairman.*') ? 'active' : '' }}" href="{{ route('chairman.index') }}" >Chairman's Message</a></li>
-                <li><a class="" href="" >Terms & Conditions</a></li>
-                <li><a class="" href="" >Privacy Policy</a></li>
-            </ul>
-        </li>
 
         <li class="{{ request()->routeIs('mails.*','lands.*','messages.*') ? 'active' : '' }}">
             <a class="has-arrow menu-item 
